@@ -1,3 +1,1 @@
-print("Please Work :)")
-print("I am Christian Dave.")
-print("Hi! :)")
+print("Please Work. What if ayaw ko")
