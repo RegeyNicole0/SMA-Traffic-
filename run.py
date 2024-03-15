@@ -1,1 +1,1 @@
-print("Please Work. From nona...")
+print("Please Work. From nona.")
