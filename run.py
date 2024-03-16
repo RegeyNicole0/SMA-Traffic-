@@ -1,1 +1,1 @@
-print("Please Work. What if ayaw ko")
+print("Please Work. From nona.")
