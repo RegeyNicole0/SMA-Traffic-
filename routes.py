@@ -37,7 +37,7 @@ routes = {
     "canaway": [("h30", 0), ("rmn_dxic", 701), ("crossing", 700), ("petron", 2600), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("iligan_pier", 113),
                 ("coast_guard", 110), ("nehal_arc", 141), ("wet_market", 37), ("pub_market", 112), ("ukay_market", 80), ("dunkin", 113), 
                 ("bike_ent", 96), ("pulis_agu", 39), ("mc_hotel", 63), ("pater", 46), ("mot_race", 46), ("zoey", 39), ("unitop", 85), 
-                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("inc", 1300), ("paseo", 0)
+                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("inc", 0), ("paseo", 0)
                 ("h30", 0), ("rmn_dxic", 0)],
 
 
@@ -45,7 +45,7 @@ routes = {
     "tambo-hinaplanon": [("vanitea", 0), ("petron", 0), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("iligan_pier", 113),
                 ("coast_guard", 110), ("nehal_arc", 141), ("wet_market", 37), ("pub_market", 112), ("ukay_market", 80), ("dunkin", 113), 
                 ("bike_ent", 96), ("pulis_agu", 39), ("mc_hotel", 63), ("pater", 46), ("mot_race", 46), ("zoey", 39), ("unitop", 85), 
-                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("vanitea", 0)],
+                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("vanitea", 0)],
 
 
 
@@ -53,29 +53,29 @@ routes = {
     "hinaplanon-cabaro": [("vanitea", 0), ("petron", 0), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("iligan_pier", 113),
                 ("coast_guard", 110), ("nehal_arc", 141), ("wet_market", 37), ("pub_market", 112), ("ukay_market", 80), ("dunkin", 113), 
                 ("bike_ent", 96), ("pulis_agu", 39), ("mc_hotel", 63), ("pater", 46), ("mot_race", 46), ("zoey", 39), ("unitop", 85), 
-                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("vanitea", 0)],
+                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("vanitea", 0)],
 
 
 # Bayug-Santiago-IBJT
     "bayug-santiago": [("vanitea", 0), ("petron", 0), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("iligan_pier", 113),
                 ("coast_guard", 110), ("nehal_arc", 141), ("wet_market", 37), ("pub_market", 112), ("ukay_market", 80), ("dunkin", 113), 
                 ("bike_ent", 96), ("pulis_agu", 39), ("mc_hotel", 63), ("pater", 46), ("mot_race", 46), ("zoey", 39), ("unitop", 85), 
-                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("vanitea", 0)],
+                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("vanitea", 0)],
 
 
 # Luinab-Bahayan-Manrique
     "luinab": [("vanitea", 0), ("petron", 0), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("iligan_pier", 113),
                 ("coast_guard", 110), ("nehal_arc", 141), ("wet_market", 37), ("pub_market", 112), ("ukay_market", 80), ("dunkin", 113), 
                 ("bike_ent", 96), ("pulis_agu", 39), ("mc_hotel", 63), ("pater", 46), ("mot_race", 46), ("zoey", 39), ("unitop", 85), 
-                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("vanitea", 0)],
+                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("vanitea", 0)],
 
 
 # Bagong Silang
     "bagong_silang": [("vanitea", 0), ("petron", 0), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("iligan_pier", 113),
                 ("coast_guard", 110), ("nehal_arc", 141), ("wet_market", 37), ("pub_market", 112), ("ukay_market", 80), ("dunkin", 113), 
                 ("bike_ent", 96), ("pulis_agu", 39), ("mc_hotel", 63), ("pater", 46), ("mot_race", 46), ("zoey", 39), ("unitop", 85), 
-                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("vanitea", 0)],
+                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("vanitea", 0)],
 
-
-                
+ 
+# 
 }
