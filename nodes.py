@@ -1,4 +1,5 @@
 landmarks = {
+    #Petron Sabayle to Wet Market
     "petron": [("coop_fuel", 140), ("uncle_brew", 170)],
     "coop_fuel": [("daily", 190), ("octagon", 160 ), ("petron", 140)],
     "octagon": [("coop_fuel", 160)],
@@ -33,59 +34,64 @@ landmarks = {
     "glo_flash": [("learnfast", 46), ("tambacan", 43), ("red_carp", 48), ("pater", 47)],
     "red_carp": [("ilaya", 36), ("fount_acad", 44) ("mot_race", 47)],
     "ilaya": [("ortiz", 36), ("gsis", 40)],
-    "gsis": [("fount_acad", 37), ("new_flash,")],
+    "gsis": [("fount_acad", 37), ("new_flash", 70)],
     "zoey": [("shoppe_24", 36), ("ilaya", 45)],
     "mot_race": [("red_carp", 47), ("zoey", 39)],
     "tambacan": [("glo_flash", 43), ("fount_acad", 48)],
     "fount_acad": [("red_carp", 44), ("tambacan", 48), ("gsis", 37)],
     "unitop": [("galaxy_mart", 46) ,("watsons", 33) , ("zoey", 85)],
 
-    #Concepcion # Purok Concepcion
-    "CQ_Print": ["Coast_Wat", "Deja_Teu"],
-    "Coast_Wat": ["CQ_Print", "Ziga_Teck", "new_flash"],
-    "new_flash": ["Coast_Wat", "Pondoc", "Dexter"],
-    "Dexter": ["new_flash", "Ball_4k", "Waynsee", "ortiz"],
-    "Ball_4k": ["Dexter", "Orix", "shoppe_24"],
-    "ortiz": ["Dexter", "Ilaya", "shoppe_24"],
-    "shoppe_24": ["Ball_4k", "Zoey", "ortiz"],
-    "watsons": ["Sec_Bank", "Unitop"],
-    "Frappella": ["techtalk", "Avila_Learn"],
-    "Avila_Learn": ["Frappella", "Cathedral", "Tita_Fan"],
-    "Cathedral": ["Sec_Bank", "Avila_Learn"],
-    "Sec_Bank": ["BPI", "watsons", "Cathedral"],
-    "Deja_Teu": ["Ziga_Teck", "ICNHS", "CQ_Print"],
-    "ICNHS": ["Sapp_Ara", "Deja_Teu", "Des_Wing"],
-    "Ziga_Teck": ["Deja_Teu", "Sapp_Ara", "Pondoc", "Coast_Wat"],
-    "Pondoc": ["Ziga_Teck", "new_flash", "Mayo_Dia", "Waynsee"],
-    "Waynsee": ["Pondoc", "Orix", "Pop_Rock", "Dexter"],
-    "Orix": ["Ball_4k", "Waynsee", "Crown"],
-    "Tita_Fan": ["Avila_Learn", "Mackis"],
-    "uncle_brew": ["Emcor", "petron", "Mackis"],
-    "Mackis": ["Tita_Fan", "Epson", "uncle_brew", "Desmark"],
-    "Epson": ["Mackis", "BPI", "Post_Off"],
-    "BPI": ["St_Michaels", "Sec_Bank", "NCIP", "Epson"],
-    "St_Michaels": ["Crown", "MShoes", "BPI"],
-    "Crown": ["Pop_Rock", "Orix", "Mejia_Bldg", "St_Michaels"],
-    "Pop_Rock": ["Doc_Uy", "Mayo_Dia", "Waynsee", "Crown"],
-    "Mayo_Dia": ["Pondoc", "Lanastida", "Pop_Rock", "Sapp_Ara"],
-    "Sapp_Ara": ["Mayo_Dia", "TomNToms", "Ziga_Teck", "ICNHS"],
-    "Des_Wing": ["ICNHS", "TomNToms"],
-    "TomNToms": ["Des_Wing", "Lanastida", "Sapp_Ara"],
-    "Lanastida": ["TomNToms", "Mayo_Dia", "Doc_Uy"],
-    "Doc_Uy": ["Mejia_Bldg", "Lanastida", "Pop_Rock"],
-    "Mejia_Bldg": ["MShoes", "Crown", "Doc_Uy"],
-    "MShoes": ["NCIP", "St_Michaels", "Mejia_Bldg"],
-    "NCIP": ["Post_Off", "BPI", "PBB", "MShoes"],
-    "Post_Off": ["Epson", "Desmark", "NCIP"],
-    "Desmark": ["Post_Off", "Mackis", "Emcor"],
-    "Emcor": ["Desmark", "uncle_brew"], 
+    # Purok Concepcion
+    "cq_print": [("coast_wat", 58), ("deja_teu", 37)],
+    "ziga_teck": [("deja_teu", 58), ("sapp_ara", 44), ("pondoc", 59)],
+    "deja_teu": [("ziga_teck", 58), ("icnhs", 45), ("cq_print", 37)],
+    "coast_wat": [("cq_print", 58), ("ziga_teck", 40),("new_flash",58)],
+    "new_flash": [("gsis", 70), ("coast_wat", 58), ("pondoc", 41)],
+    "waynsee": [("pondoc", 48), ("orix", 46), ("pop_rock", 48)],
+    "pondoc": [("new_flash", 41), ("ziga_teck", 59), ("mayo_dia", 47), ("waynsee", 48)],
+    "mayo_dia": [("pondoc", 47), ("lanastida", 53), ("pop_rock", 45), ("sapp_ara", 64)],
+    "sapp_ara": [("mayo_dia", 64), ("tomntoms", 57), ("icnhs", 60)],
+    "icnhs": [("sapp_ara", 60), ("deja_teu", 45), ("des_wing", 58)],
+    "ortiz": [("dexter", 36), ("shoppe_24", 48)],
+    "dexter": [("news_flash", 47), ("waynsee", 40)],
+    "shoppe_24": [("ball_4k", 38)],
+    "ball_4k": [("dexter", 46), ("orix", 40)],
+    "orix": [("waynsee", 46), ("crown", 47)],
+    "crown": [("pop_rock", 46), ("mejia_bldg", 60), ("st_michaels", 37)],
+    "pop_rock": [("doc_uy", 58), ("mayo_dia", 45), ("crown", 46)],
+    "st_michaels": [("crown", 37), ("mshoes", 57), ("bpi", 47)],
+    "bpi": [("st_michaels", 47), ("sec_bank", 88), ("ncip", 59), ("epson", 51)],
+    "sec_bank": [("bpi", 88), ("ball_4k", 85), ("watsons", 40)],
+    "watsons": [("sec_bank", 40), ("unitop", 33)],
+    "epson": [("bpi", 51), ("mackis", 50), ("post_off", 58)],
+    "mackis": [("tita_fan", 40), ("epson", 50), ("uncle_brew", 50)],
+    "uncle_brew": [("mackis", 50), ("emcor", 61), ("petron", 170)],
+    "tita_fan": [("avila_learn", 45)],
+    # "tita_fan": [("mackis", 40), ("avila_learn", 45)],
+    "avila_learn": [("sec_bank", 94), ("frapella", 40)],
+    # "avila_learn": [("tita_fan", 45),("sec_bank", 94), ("frapella", 40)],
+    "frapella": [("techtalk", 32)],
+    # "frapella": [("avila_learn", 40), ("techtalk", )],
+    # "cathedral": [("sec_bank", ), ("avila_learn", )],
     
-    #Gaisano_Mall
-    "PBB": ["NCIP", "Kylas"],
-    "Phoenix_Gas": ["Palao_Mrkt", "Lanastida", "CoinSaver"],
+    # National Road (GMall to ICNHS)
+    "des_wing": [("icnhs", 58), ("tomntoms", 59)],
+    "tomntoms": [("des_wing", 59), ("sapp_ara", 57), ("lanastida", 63)],
+    "lanastida": ["tomntoms", "mayo_dia", "doc_uy"],
+    "doc_uy": ["mejia_bldg", "lanastida", "pop_rock"],
+    "mejia_bldg": ["mshoes", "crown", "doc_uy"],
+    "mshoes": ["ncip", "st_michaels", "mejia_bldg"],
+    "ncip": ["post_off", "bpi", "pbb", "mshoes"],
+    "post_off": ["epson", "desmark", "ncip"],
+    "desmark": [("mackis", 60), ("post_off", ), "emcor"],
+    "emcor": ["desmark", "uncle_brew"], 
+    
+    # Palao Market
+    "pbb": ["ncip", "kylas"],
+    "phoenix_gas": ["Palao_Mrkt", "lanastida", "CoinSaver"],
     "CoinSaver": ["Chandis"],
-    "Kylas": ["PBB", "Alemania"],
-    "Alemania": ["Kylas", "MotTrad_Villa", "Bam_Doc"],
+    "kylas": ["pbb", "Alemania"],
+    "Alemania": ["kylas", "MotTrad_Villa", "Bam_Doc"],
     "Chandis": ["MotTrad_Villa", "Meat_Shop", "Palao_Mrkt", "CoinSaver"],
     "MotTrad_Villa": ["Alemania", "Chandis", "Landbank"],
     "Bam_Doc": ["MercJupi_St", "Abund_Life"],
@@ -103,3 +109,15 @@ landmarks = {
     "PC_Ilgn": ["BDO_Network", "Coco_Pet", "Phoenix_LPG"],
     "Phoenix_LPG": ["Megatech", "PC_Ilgn"]
 }
+
+# 3+ Lanes Roads (two-way)
+    # Gaisano Mall to NCIP (6-lanes)
+    # TC- Circle to Gaisano Old (6-lanes)
+    # Co-op Fuel to TC-Circle (4-lanes)
+    # NCIP to ICNHS (4-lanes)
+    # Petron to Co-op Fuel (3-lanes)
+    
+# Two-Lane Roads
+   
+# Single-Lane Roads
+    # Gaisano Mall to 
