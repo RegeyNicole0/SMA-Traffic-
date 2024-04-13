@@ -6,7 +6,7 @@ landmarks = {
     "abest": [("octagon", 50)],
     "techtalk": [("abest", 56)],
     # "IS_Rep": ["fire_safe", "octagon"],
-    "fire_safe": [("daily", 117), ("rcbc", 45)],
+    "fire_safe": [("daily", 117), ("rcbc", 45), ("pnb", 87)],
     "daily": [("tc_circle", 261), ("coop_fuel", 190) ("fire_safe",117)],
     "tc_circle": [("iligan_pier", 113), ("daily", 261), ("gaisano_old", 193)],
     "iligan_pier":[("tc_circle", 113), ("coast_guard", 110)],
@@ -16,7 +16,7 @@ landmarks = {
     "gaisano_old": [("nehal_arc", 50), ("ukay_market", 105), ("halal_meat", 114)],
     "wet_market": [("pub_market", 112)],
     "pub_market": [("ukay_market", 80)],
-    "ukay_market": [("agr_pharm", 40)],
+    "ukay_market": [("dunkin", 113)],
     "halal_meat": [("gaisano_old", 144), ("dunkin", 97), ("dnp", 99)],
     "dnp": [("halal_meat", 99), ("rcbc", 45), ("bike_ent", 88)],
     "rcbc": [("dnp", 45), ("fire_safe", 89), ("penshoppe", 103)],
@@ -30,7 +30,7 @@ landmarks = {
     "pater": [("glo_flash", 47), ("penshoppe", 85), ("mot_race", 46)],
     "penshoppe": [("rcbc", 103), ("galaxy_mart", 46), ("pater", 85), ("octagon", 91)],
     "galaxy_mart": [("penshoppe", 46), ("unitop", 46)],   
-    "learnfast": [("glo_flash", 46)],
+    "learnfast": [("glo_flash", 46), ("tambacan", 78)],
     "glo_flash": [("learnfast", 46), ("tambacan", 43), ("red_carp", 48), ("pater", 47)],
     "red_carp": [("ilaya", 36), ("fount_acad", 44) ("mot_race", 47)],
     "ilaya": [("ortiz", 36), ("gsis", 40)],
@@ -40,6 +40,8 @@ landmarks = {
     "tambacan": [("glo_flash", 43), ("fount_acad", 48)],
     "fount_acad": [("red_carp", 44), ("tambacan", 48), ("gsis", 37)],
     "unitop": [("galaxy_mart", 46) ,("watsons", 33) , ("zoey", 85)],
+    "pnb": [("dnp", 45), ("Pulis_Agu", 89), ("penshoppe", 102), ("fire_safe", 87)],
+    "pera_mpc": [("learnfast", 59)],
 
     # Purok Concepcion
     "cq_print": [("coast_wat", 58), ("deja_teu", 37)],
@@ -85,7 +87,7 @@ landmarks = {
     "post_off": ["epson", "desmark", "ncip"],
     "desmark": [("mackis", 60), ("post_off", ), "emcor"],
     "emcor": ["desmark", "uncle_brew"], 
-    
+
     # Palao Market
     "pbb": ["ncip", "kylas"],
     "phoenix_gas": ["Palao_Mrkt", "lanastida", "CoinSaver"],
