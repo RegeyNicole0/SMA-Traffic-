@@ -1,4 +1,17 @@
 landmarks = {
+    # National Road (ICNHS to GMALL)
+    "des_wing": [("icnhs", 58), ("tomntoms", 59)],
+    "tomntoms": [("des_wing", 59), ("sapp_ara", 57), ("lanastida", 63)],
+    "lanastida": [("tomntoms", 63), ("mayo_dia", 53), ("phoenix_gas", 218), ("doc_uy", 46)],
+    "doc_uy": [("lanastida", 46), ("pop_rock", 58), ("mejia_bldg", 46)],
+    "mejia_bldg": [("doc_uy", 46), ("crown", 60), ("coinsaver", 208), ("mshoes", 37)],
+    "mshoes": [("mejia_bldg", 37), ("st_michaels", 57), ("ncip", 47)],
+    "ncip": [("mshoes", 47), ("bpi", 59), ("mottrad_villa", 292), ("post_off", 51)],
+    "post_off": [("ncip", 51), ("epson", 58), ("desmark", 52)],
+    "desmark": [("post_off", 52),("mackis", 60), ("emcor", 50)],
+    "emcor": [("desmark", 50), ("uncle_brew", 61), ("gaisano_mall", 124)],
+    "gaisano_mall": [("emcor", 124)],
+
     #Petron Sabayle to Wet Market
     "petron": [("coop_fuel", 140), ("uncle_brew", 170)],
     "coop_fuel": [("daily", 190), ("octagon", 160 ), ("petron", 140)],
@@ -11,7 +24,7 @@ landmarks = {
     # "IS_Rep": ["fire_safe", "octagon"],
     # "fire_safe": [("daily", 117), ("rcbc", 45), ("pnb", 87)], one way
     "fire_safe": [("daily", 117), ("rcbc", 45), ("pnb", 87), ("octagon", 95)],
-    "daily": [("tc_circle", 261), ("coop_fuel", 190) ("fire_safe",117)],
+    "daily": [("tc_circle", 261), ("coop_fuel", 190), ("fire_safe",117)],
     "tc_circle": [("iligan_pier", 113), ("daily", 261), ("gaisano_old", 193)],
     "iligan_pier":[("tc_circle", 113), ("coast_guard", 110)],
     "coast_guard": [("nehal_arc", 141)],
@@ -36,7 +49,7 @@ landmarks = {
     "galaxy_mart": [("penshoppe", 46), ("unitop", 46)],   
     "learnfast": [("glo_flash", 46), ("tambacan", 78)],
     "glo_flash": [("learnfast", 46), ("tambacan", 43), ("red_carp", 48), ("pater", 47)],
-    "red_carp": [("ilaya", 36), ("fount_acad", 44) ("mot_race", 47)],
+    "red_carp": [("ilaya", 36), ("fount_acad", 44), ("mot_race", 47)],
     "ilaya": [("ortiz", 36), ("gsis", 40)],
     "gsis": [("fount_acad", 37), ("new_flash", 70)],
     "zoey": [("shoppe_24", 36), ("ilaya", 45)],
@@ -93,7 +106,7 @@ landmarks = {
     "mshoes": [("mejia_bldg", 37), ("st_michaels", 57), ("ncip", 47)],
     "ncip": [("mshoes", 47), ("bpi", 59), ("mottrad_villa", 292), ("post_off", 51)],
     "post_off": [("ncip", 51), ("epson", 58), ("desmark", 52)],
-    "desmark": [("post_off", 52),("mackis", 60), ("emcor", 50), ("inc", )],
+    "desmark": [("post_off", 52),("mackis", 60), ("emcor", 50)],
     "emcor": [("desmark", 50), ("uncle_brew", 61), ("gaisano_mall", 124)],
     "gaisano_mall": [("emcor", 124)],
 
@@ -119,18 +132,27 @@ landmarks = {
     "phoenix_lpg": [("megatech", 57), ("pc_ilgn", 85)],
     "landbank": [("min_burger", 116), ("sym", 100)],
     # "colorchart": ["landbank", "sym"]
-
-
 }
 
-# 3+ Lanes Roads (two-way)
+# Four to Six Lane Roads (Two Way)
     # Gaisano Mall to NCIP (6-lanes)
     # TC- Circle to Gaisano Old (6-lanes)
     # Co-op Fuel to TC-Circle (4-lanes)
     # NCIP to ICNHS (4-lanes)
+    # TC Circle to Iligan Pier (4-lanes)
+    # Landbank to Gaisano Old (4-lanes)
+
+# Three- Lanes Roads 
     # Petron to Co-op Fuel (3-lanes)
     
 # Two-Lane Roads
+    # Gaisano Old to Ukay Market (One Way)
+    # Nehal Arc to Iligan Pier (One Way)
+    # Desmark to Fire Safe (Two Way)
+    # Fire Safe to Daily (Two Way)
+    # Emcor to Uncle Brew (Two Way)
+    # ICNHS to Petron (Two Way)
+    # Orix to Deja Teu (Two Way)
    
 # Single-Lane Roads
     # Gaisano Mall to 
