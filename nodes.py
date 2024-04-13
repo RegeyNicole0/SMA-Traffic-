@@ -2,11 +2,15 @@ landmarks = {
     #Petron Sabayle to Wet Market
     "petron": [("coop_fuel", 140), ("uncle_brew", 170)],
     "coop_fuel": [("daily", 190), ("octagon", 160 ), ("petron", 140)],
-    "octagon": [("coop_fuel", 160)],
-    "abest": [("octagon", 50)],
-    "techtalk": [("abest", 56)],
+    # "octagon": [("coop_fuel", 160)], one way
+    "octagon": [("coop_fuel", 160), ("fire_safe", 95), ("abest", 50)], 
+    # "abest": [("octagon", 50)], one way
+    "abest": [("octagon", 50), ("techtalk", 56)],
+    # "techtalk": [("abest", 56)], one way
+    "techtalk": [("abest", 56), ("frapella", 32)],
     # "IS_Rep": ["fire_safe", "octagon"],
-    "fire_safe": [("daily", 117), ("rcbc", 45), ("pnb", 87)],
+    # "fire_safe": [("daily", 117), ("rcbc", 45), ("pnb", 87)], one way
+    "fire_safe": [("daily", 117), ("rcbc", 45), ("pnb", 87), ("octagon", 95)],
     "daily": [("tc_circle", 261), ("coop_fuel", 190) ("fire_safe",117)],
     "tc_circle": [("iligan_pier", 113), ("daily", 261), ("gaisano_old", 193)],
     "iligan_pier":[("tc_circle", 113), ("coast_guard", 110)],
@@ -66,14 +70,15 @@ landmarks = {
     "sec_bank": [("bpi", 88), ("ball_4k", 85), ("watsons", 40)],
     "watsons": [("sec_bank", 40), ("unitop", 33)],
     "epson": [("bpi", 51), ("mackis", 50), ("post_off", 58)],
-    "mackis": [("tita_fan", 40), ("epson", 50), ("uncle_brew", 50)],
+    # "mackis": [("tita_fan", 40), ("epson", 50), ("uncle_brew", 50)], one way
+    "mackis": [("tita_fan", 40), ("epson", 50), ("uncle_brew", 50), ("desmark", 60)],
     "uncle_brew": [("mackis", 50), ("emcor", 61), ("petron", 170)],
-    "tita_fan": [("avila_learn", 45)],
-    # "tita_fan": [("mackis", 40), ("avila_learn", 45)],
-    "avila_learn": [("sec_bank", 94), ("frapella", 40)],
-    # "avila_learn": [("tita_fan", 45),("sec_bank", 94), ("frapella", 40)],
-    "frapella": [("techtalk", 32)],
-    # "frapella": [("avila_learn", 40), ("techtalk", )],
+    # "tita_fan": [("avila_learn", 45)],
+    "tita_fan": [("mackis", 40), ("avila_learn", 45)],
+    # "avila_learn": [("sec_bank", 94), ("frapella", 40)], one way
+    "avila_learn": [("tita_fan", 45),("sec_bank", 94), ("frapella", 40)],
+    # "frapella": [("techtalk", 32)], one way
+    "frapella": [("avila_learn", 40), ("techtalk", 32)],
     # "cathedral": [("sec_bank", ), ("avila_learn", )],
     
     # National Road (ICNHS to GMALL)
