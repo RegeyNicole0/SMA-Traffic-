@@ -41,11 +41,14 @@ landmarks = {
     "gsis": [("fount_acad", 37), ("new_flash", 70)],
     "zoey": [("shoppe_24", 36), ("ilaya", 45)],
     "mot_race": [("red_carp", 47), ("zoey", 39)],
-    "tambacan": [("glo_flash", 43), ("fount_acad", 48)],
+    "tambacan": [("glo_flash", 43), ("fount_acad", 48), ("celdran", 1180)],
     "fount_acad": [("red_carp", 44), ("tambacan", 48), ("gsis", 37)],
-    "unitop": [("galaxy_mart", 46) ,("watsons", 33) , ("zoey", 85)],
+    "unitop": [("galaxy_mart", 46) ,("watsons", 33) , ("zoey", 85), ("techtalk", 93)],
     "pnb": [("dnp", 45), ("Pulis_Agu", 89), ("penshoppe", 102), ("fire_safe", 87)],
     "pera_mpc": [("learnfast", 59)],
+    "celdran": [("tambacan", 1180), ("macapagal", 543)],
+    "macapagal": [("celdran", 543), ("ditucalan", 13900)],
+    "ditucalan": [("des_wing", 15200)],
 
     # Purok Concepcion
     "cq_print": [("coast_wat", 58), ("deja_teu", 37)],
@@ -90,7 +93,7 @@ landmarks = {
     "mshoes": [("mejia_bldg", 37), ("st_michaels", 57), ("ncip", 47)],
     "ncip": [("mshoes", 47), ("bpi", 59), ("mottrad_villa", 292), ("post_off", 51)],
     "post_off": [("ncip", 51), ("epson", 58), ("desmark", 52)],
-    "desmark": [("post_off", 52),("mackis", 60), ("emcor", 50)],
+    "desmark": [("post_off", 52),("mackis", 60), ("emcor", 50), ("inc", )],
     "emcor": [("desmark", 50), ("uncle_brew", 61), ("gaisano_mall", 124)],
     "gaisano_mall": [("emcor", 124)],
 
@@ -116,6 +119,8 @@ landmarks = {
     "phoenix_lpg": [("megatech", 57), ("pc_ilgn", 85)],
     "landbank": [("min_burger", 116), ("sym", 100)],
     # "colorchart": ["landbank", "sym"]
+
+
 }
 
 # 3+ Lanes Roads (two-way)
