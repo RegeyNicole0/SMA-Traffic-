@@ -77,5 +77,12 @@ routes = {
                 ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("vanitea", 0)],
 
  
-# 
+# Sta. Filomena-Dalipuga-Centennial
+#vanitea, petron, coop_fuel, daily, tc_circle, gaisano_old, halal_meat, dnp, pnb, penshoppe, galaxy_mart, unitop, techtalk, frapella, avila_learn, tita_fan, mackis, desmark,   emcor, vanitea
+    "sta_dalipuga": [("vanitea", 0), ("petron", 0), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano", 193), ("halal_meat", 114),
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("vanitea", 0)],
+
+
+
 }
