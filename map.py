@@ -26,4 +26,3 @@ for layout_func, layout_name in layouts:
     nx.draw_networkx_edge_labels(G, pos, edge_labels=nx.get_edge_attributes(G, 'weight'), font_size=8)
     plt.title(f"Multidigraph - {layout_name}")
     plt.show()
-
