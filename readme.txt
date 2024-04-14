@@ -8,7 +8,7 @@ map.py
 run.py
     Python file that holds the rerouting program. If needed, refer to the Pipfile and use Virtual Environment to run the file.
 scratch.py
-
+    Python file that serves as a temporary workspace storing snippets of code without affecting the whole project.
 -- IMPLEMENTATION --
 1. Use BFS to find all possible paths nga iyang ma agian.
         -Explore all possible paths for each jeepney line, considering all landmarks, origins, and destinations. Store these paths for all jeepney lines.
