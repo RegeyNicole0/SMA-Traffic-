@@ -1,32 +1,29 @@
 ## -- MAIN CODE -- ##
 import networkx as nx
 import matplotlib.pyplot as plt
-
-# Importing the landmarks dictionary from nodes.py
 from nodes import landmarks
 
-# Create a directed graph using NetworkX
-G = nx.DiGraph()
+# Create the multidigraph (as shown in the previous example)
+G = nx.MultiDiGraph()
 
-# Add edges to the graph from the landmarks dictionary
-for landmark, connections in landmarks.items():
-    for connection, distance in connections:
-        # Add each connection as a directed edge with a weight representing the distance
-        G.add_edge(landmark, connection, weight=distance)
+# Add nodes and edges with weights to the graph
+for node, neighbors in landmarks.items():
+    for neighbor, weight in neighbors:
+        G.add_edge(node, neighbor, weight=weight)
 
-# Plot the digraph map
-plt.figure(figsize=(14, 10))
+# Experiment with different layouts
+layouts = [
+    (nx.spring_layout, 'Spring Layout'),
+    (nx.kamada_kawai_layout, 'Kamada-Kawai Layout'),
+    (nx.shell_layout, 'Shell Layout')
+]
 
-# Experiment with different layout options (e.g., spring_layout, circular_layout, shell_layout)
-pos = nx.spring_layout(G)
+# Plot the graph using each layout
+for layout_func, layout_name in layouts:
+    plt.figure(figsize=(12, 12))
+    pos = layout_func(G, weight='weight')
+    nx.draw(G, pos, with_labels=True, node_size=1000, node_color='skyblue', font_size=8, font_color='black')
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=nx.get_edge_attributes(G, 'weight'), font_size=8)
+    plt.title(f"Multidigraph - {layout_name}")
+    plt.show()
 
-# Draw the graph
-nx.draw(G, pos, with_labels=True, node_color='lightblue', node_size=500, font_size=10, font_weight='bold', edge_color='gray')
-
-# Draw edge labels (distance) with smaller font size to reduce clutter
-edge_labels = nx.get_edge_attributes(G, 'weight')
-nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8, rotate=True)
-
-# Display the plot
-plt.title("Digraph Map of Landmarks")
-plt.show()

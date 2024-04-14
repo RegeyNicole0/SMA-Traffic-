@@ -25,7 +25,7 @@ landmarks = {
     # "IS_Rep": ["fire_safe", "octagon"],
     # "fire_safe": [("daily", 117), ("rcbc", 45), ("pnb", 87)], one way
     "fire_safe": [("daily", 117), ("pnb", 89), ("octagon", 95)],
-    "daily": [("tc_circle", 261), ("coop_fuel", 190) ("fire_safe",117)],
+    "daily": [("tc_circle", 261), ("coop_fuel", 190), ("fire_safe",117)],
     "tc_circle": [("iligan_pier", 113), ("daily", 261), ("gaisano_old", 193)],
     "iligan_pier":[("tc_circle", 113), ("coast_guard", 110)],
     "coast_guard": [("nehal_arc", 141)],
@@ -55,10 +55,10 @@ landmarks = {
     "gsis": [("fount_acad", 37), ("new_flash", 70)],
     "zoey": [("shoppe_24", 36), ("ilaya", 45), ("unitop", 85)],
     "mot_race": [("red_carp", 47), ("zoey", 39)],
-    "tambacan": [("glo_flash", 43), ("fount_acad", 48), ("celdran", 1180)],
+    "tambacan": [("glo_flash", 43), ("fount_acad", 48)],
     "fount_acad": [("red_carp", 44), ("tambacan", 48), ("gsis", 37)],
     "unitop": [("galaxy_mart", 46) ,("watsons", 33) , ("zoey", 85), ("techtalk", 93)], #zoey -> unitop
-    "pnb": [("dnp", 45), ("Pulis_Agu", 89), ("penshoppe", 102), ("fire_safe", 89)],
+    "pnb": [("dnp", 45), ("pulis_agu", 89), ("penshoppe", 102), ("fire_safe", 89)],
     "pera_mpc": [("learnfast", 59)],
 
     # Purok Concepcion
@@ -75,7 +75,7 @@ landmarks = {
     "icnhs": [("sapp_ara", 60), ("deja_teu", 45), ("des_wing", 58)],
     "ortiz": [("dexter", 36), ("shoppe_24", 48), ("qa_plaza", 43)],
     "citi_alley": [("coast_wat", 35)],
-    "dexter": [("news_flash", 47), ("waynsee", 40)],
+    "dexter": [("new_flash", 47), ("waynsee", 40)],
     "shoppe_24": [("ball_4k", 38), ("ortiz", 45)],
     "ball_4k": [("dexter", 46), ("orix", 40)],
     "orix": [("waynsee", 46), ("crown", 47)],
@@ -114,8 +114,8 @@ landmarks = {
     # "pbb": ["ncip", "kylas"],
     # "kylas": ["pbb", "Alemania"],
     # "Alemania": ["kylas", "mottrad_villa", "Bam_Doc"],
-    "mottrad_villa": [("ncip", 292), ("chandis", 94), ("min_burger", 94)],
     "chandis": [("mottrad_villa", 94), ("meat_shop", 121)],
+    "mottrad_villa": [("ncip", 292), ("min_burger", 94)],
     "min_burger": [("pugaan_term", 45), ("landbank", 116), ("mottrad_villa", 94)],
     "coinsaver": [("chandis", 75), ("phoenix_gas", 99)],
     "phoenix_gas": [("coinsaver", 99), ("lanastida", 218), ("palao_mrkt", 67)],

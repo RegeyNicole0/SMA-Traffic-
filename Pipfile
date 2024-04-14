@@ -8,6 +8,7 @@ networkx = "*"
 matplotlib = "*"
 pandas = "*"
 pykml = "*"
+scipy = "*"
 
 [dev-packages]
 
