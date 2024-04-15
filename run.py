@@ -20,7 +20,7 @@ def dfs_all_paths(graph, current_node, end_node, waypoints, path, paths, num_vis
     # If the path length exceeds the maximum length, backtrack
     if len(path) > max_length:
         path.pop()
-        num_visited -= 1
+        num_visited += 1
         memo[memo_key] = None  # Avoid redundant computation for this state
         return
 
@@ -78,11 +78,11 @@ def find_all_paths_with_waypoints(graph, start_node, end_node, waypoints, max_le
 graph = landmarks
 
 # Define the starting and ending nodes
-start_node = 'vanitea'  # Replace 'vanitea' with the desired starting node
-end_node = 'gaisano_mall'    # Replace 'landbank' with the desired ending node
+start_node = 'landbank'  # Replace 'vanitea' with the desired starting node
+end_node = 'tambacam'    # Replace 'landbank' with the desired ending node
 
 # Define the waypoints (nodes to pass through in order)
-waypoints = ['tc_circle', 'wet_market']
+waypoints = ['emcor']
 
 # Define the maximum path length
 max_length = 34
