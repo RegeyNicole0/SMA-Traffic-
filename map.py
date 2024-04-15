@@ -1,4 +1,4 @@
-## -- MAIN CODE -- ##
+## -- GRAPH GENERATOR -- ##
 import networkx as nx
 import matplotlib.pyplot as plt
 from nodes import landmarks

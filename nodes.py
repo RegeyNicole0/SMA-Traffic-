@@ -10,11 +10,11 @@ landmarks = {
     "post_off": [("ncip", 51), ("epson", 58), ("desmark", 52)],
     "desmark": [("post_off", 52),("mackis", 60), ("emcor", 50)],
     "emcor": [("desmark", 50), ("uncle_brew", 61), ("gaisano_mall", 124)],
-    "gaisano_mall": [("emcor", 124)],
+    "gaisano_mall": [("emcor", 124), ("vanitea", 190)],
 
     #Petron Sabayle to Wet Market
-    "vanitea": [("petron", 243)],
-    "petron": [("coop_fuel", 140), ("uncle_brew", 170)],
+    "vanitea": [("petron", 243), ("gaisano_mall", 190)],
+    "petron": [("coop_fuel", 140), ("uncle_brew", 170), ("vanitea", 243)],
     "coop_fuel": [("daily", 190), ("octagon", 160 ), ("petron", 140)],
     # "octagon": [("coop_fuel", 160)], one way
     "octagon": [("coop_fuel", 160), ("fire_safe", 95), ("abest", 50)], 
