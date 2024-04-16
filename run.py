@@ -79,7 +79,7 @@ graph = landmarks
 
 # Define the starting and ending nodes
 start_node = 'landbank'  # Replace 'vanitea' with the desired starting node
-end_node = 'tambacam'    # Replace 'landbank' with the desired ending node
+end_node = 'tc_circle'    # Replace 'landbank' with the desired ending node
 
 # Define the waypoints (nodes to pass through in order)
 waypoints = ['emcor']
