@@ -1,8 +1,10 @@
 ## -- MAIN CODE -- ##
 from nodes import landmarks
-from collections import deque
+from routes import start_end
 
+#Function for Depth-First Search
 def dfs_all_paths(graph, current_node, end_node, waypoints, path, paths, num_visited, total_weight, max_length=34, memo=None):
+    # Memoization is an optimization process where we record previous paths and store them into cache. This way we can speed up the computational process of each paths.
     if memo is None:
         memo = {}
 
@@ -55,11 +57,11 @@ def dfs_all_paths(graph, current_node, end_node, waypoints, path, paths, num_vis
             dfs_all_paths(
                 graph, neighbor, end_node, waypoints, path, paths, num_visited, total_weight, max_length, memo
             )
-            
+        
             # Subtract the weight after returning from the recursion
             total_weight -= weight
 
-    # Backtrack
+    # Backtracking
     path.pop()
     num_visited -= 1  # Decrement the number of nodes visited
     memo[memo_key] = None
@@ -79,7 +81,7 @@ graph = landmarks
 
 # Define the starting and ending nodes
 start_node = 'landbank'  # Replace 'vanitea' with the desired starting node
-end_node = 'tambacam'    # Replace 'landbank' with the desired ending node
+end_node = 'tc_circle'    # Replace 'landbank' with the desired ending node
 
 # Define the waypoints (nodes to pass through in order)
 waypoints = ['emcor']

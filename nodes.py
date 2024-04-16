@@ -52,7 +52,7 @@ landmarks = {
     "glo_flash": [("learnfast", 46), ("tambacan", 43), ("red_carp", 48), ("pater", 47)],
     "red_carp": [("ilaya", 36), ("fount_acad", 44), ("mot_race", 47)],
     "ilaya": [("ortiz", 36), ("gsis", 40)],
-    "gsis": [("fount_acad", 37), ("new_flash", 70)],
+    "gsis": [("fount_acad", 37), ("qa_plaza", 37)],
     "zoey": [("shoppe_24", 36), ("ilaya", 45), ("unitop", 85)],
     "mot_race": [("red_carp", 47), ("zoey", 39)],
     "tambacan": [("glo_flash", 43), ("fount_acad", 48)],
@@ -66,8 +66,8 @@ landmarks = {
     "ziga_teck": [("deja_teu", 58), ("sapp_ara", 44), ("pondoc", 59)],
     "deja_teu": [("ziga_teck", 58), ("icnhs", 45), ("cq_print", 37)],
     "coast_wat": [("cq_print", 58), ("ziga_teck", 40),("new_flash",58)],
-    "new_flash": [("gsis", 70), ("coast_wat", 58), ("pondoc", 41), ("qa_plaza", 35)],
-    "qa_plaza": [("citi_alley", 65)],
+    "new_flash": [("coast_wat", 58), ("pondoc", 41), ("qa_plaza", 35)],
+    "qa_plaza": [("citi_alley", 65), ("gsis", 37), ("new_flash", 35)],
     "waynsee": [("pondoc", 48), ("orix", 46), ("pop_rock", 48)],
     "pondoc": [("new_flash", 41), ("ziga_teck", 59), ("mayo_dia", 47), ("waynsee", 48)],
     "mayo_dia": [("pondoc", 47), ("lanastida", 53), ("pop_rock", 45), ("sapp_ara", 64)],
@@ -99,7 +99,7 @@ landmarks = {
     
     # National Road (ICNHS to GMALL)
     "des_wing": [("icnhs", 58), ("tomntoms", 59)],
-    "tomntoms": [("des_wing", 59), ("sapp_ara", 57), ("lanastida", 63)],
+    "tomntoms": [("des_wing", 59), ("lanastida", 63)],
     "lanastida": [("tomntoms", 63), ("mayo_dia", 53), ("phoenix_gas", 218), ("doc_uy", 46)],
     "doc_uy": [("lanastida", 46), ("pop_rock", 58), ("mejia_bldg", 46)],
     "mejia_bldg": [("doc_uy", 46), ("crown", 60), ("coinsaver", 208), ("mshoes", 37)],
