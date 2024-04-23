@@ -10,7 +10,7 @@ run.py
 scratch.py
 
 -- IMPLEMENTATION --
-1. Use BFS to find all possible paths nga iyang ma agian.
+1. Use DFS to find all possible paths nga iyang ma agian.
         -Explore all possible paths for each jeepney line, considering all landmarks, origins, and destinations. Store these paths for all jeepney lines.
         -Set a maximum number of nodes to visit based on the longest route for each jeepney line. This helps in controlling the search space and avoiding excessively long routes.
         PRIORITY:
