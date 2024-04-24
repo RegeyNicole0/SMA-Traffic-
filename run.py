@@ -1,29 +1,80 @@
 ## -- MAIN CODE -- ##
-import networkx as nx
-import matplotlib.pyplot as plt
 from nodes import landmarks
+from routes import start_end
 
-# Create the multidigraph (as shown in the previous example)
-G = nx.MultiDiGraph()
+# Function for Depth-First Search (DFS) to find all paths
+def dfs_all_paths(graph, current_node, end_node, waypoints, path, paths, num_visited, total_weight, max_length=34, memo=None):
+    if memo is None:
+        memo = {}
 
-# Add nodes and edges with weights to the graph
-for node, neighbors in landmarks.items():
-    for neighbor, weight in neighbors:
-        G.add_edge(node, neighbor, weight=weight)
+    memo_key = (current_node, tuple(path))
 
-# Experiment with different layouts
-layouts = [
-    (nx.spring_layout, 'Spring Layout'),
-    (nx.kamada_kawai_layout, 'Kamada-Kawai Layout'),
-    (nx.shell_layout, 'Shell Layout')
-]
+    if memo_key in memo:
+        return memo[memo_key]
 
-# Plot the graph using each layout
-for layout_func, layout_name in layouts:
-    plt.figure(figsize=(12, 12))
-    pos = layout_func(G, weight='weight')
-    nx.draw(G, pos, with_labels=True, node_size=1000, node_color='skyblue', font_size=8, font_color='black')
-    nx.draw_networkx_edge_labels(G, pos, edge_labels=nx.get_edge_attributes(G, 'weight'), font_size=8)
-    plt.title(f"Multidigraph - {layout_name}")
-    plt.show()
+    path.append(current_node)   # Increment the number of nodes visited
+    num_visited += 1
 
+    if len(path) > max_length:
+        path.pop()
+        num_visited += 1
+        memo[memo_key] = None   # Avoid redundant computation for this state
+        return
+
+    if current_node == end_node:
+        waypoints_index = 0
+        valid = True
+        for node in path:
+            if waypoints_index < len(waypoints) and node == waypoints[waypoints_index]:
+                waypoints_index += 1
+        
+        if waypoints_index == len(waypoints):
+            path_info = {
+                'path': path.copy(),
+                'num_visited': num_visited,
+                'total_weight': total_weight
+            }
+            paths.append(path_info)
+            memo[memo_key] = path_info
+            return
+
+    # Explore each neighbor
+    for neighbor, weight in graph[current_node]:
+        if neighbor not in path:
+            total_weight += weight
+             # Perform DFS recursively
+            dfs_all_paths(
+                graph, neighbor, end_node, waypoints, path, paths, num_visited, total_weight, max_length, memo
+            )
+        
+            total_weight -= weight
+
+    path.pop()
+    num_visited -= 1
+    memo[memo_key] = None
+
+# Function to find all paths with waypoints for a given route
+def find_paths_for_route(graph, start_node, end_node, waypoints, max_length=34):
+    paths = []
+    dfs_all_paths(graph, start_node, end_node, waypoints, [], paths, num_visited=0, total_weight=0, max_length=max_length, memo={})
+    return paths
+
+# Set the landmarks from the map
+graph = landmarks
+
+# Loop through each route in start_end dictionary
+for route_name, route_nodes in start_end.items():
+    start_node, end_node = route_nodes
+    waypoints = []  # You can define your waypoints for each route here if needed
+    max_length = 34  # Maximum path length
+
+    # Find all paths for the current route
+    all_paths = find_paths_for_route(graph, start_node, end_node, waypoints, max_length)
+
+    # Print all paths for the current route
+    print(f"Route: {route_name}")
+    for i, path in enumerate(all_paths):
+        print(f"Path {i+1}: {path['path']}")
+        print(f"Nodes visited: {path['num_visited']}")
+        print(f"Total weight: {path['total_weight']}")
+    print()

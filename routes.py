@@ -200,3 +200,117 @@ routes = {
     "pugaan": [("landbank", 0), ("min_burger", 116), ("pugaan_term", 45), ("e_fix", 114), ("landbank", 50)],
 
 }
+
+start_end = {
+# Tambo-Gerona, San Roque and Hinaplanon Crossing (Route 1 and 2)
+    "tambo-hinaplanon": ["vanitea", "gaisano_mall"],
+
+# Hinaplanon-Cabaro (Route 3)
+    "hinaplanon-cabaro": ["vanitea", "gaisano_mall"],
+
+# Canaway-Santiago-Bayug (Route 4)
+    "canaway": ["vanitea", "gaisano_mall"],
+
+# Bayug-Santiago-IBJT (Route 5)
+    "bayug-santiago": ["vanitea", "gaisano_mall"],
+
+# Luinab-Bahayan-Manrique (Route 6)
+    "luinab_bahayan": ["vanitea", "gaisano_mall"],
+
+# Bagong Silang
+    "bagong_silang": ["vanitea", "gaisano_mall"],
+ 
+# Sta. Filomena-Acmac
+    "sta_fe": ["vanitea", "gaisano_mall"],
+
+
+# Dalipuga - Vista Village
+    "dalipuga": ["vanitea", "gaisano_mall"],
+
+
+# Kalubihon
+    "kalubihon": ["vanitea", "gaisano_mall"],
+
+
+# San Roque - Lambaguhon
+    "san_lambaguhon": ["vanitea", "gaisano_mall"],
+
+
+# Tambacan
+    "tambacan": ["tambacan", "des_wing"],
+
+
+# Tubod-Rosario Heights
+    "tubod_rosario": ["des_wing","tomntoms"],
+
+
+# Tubod-Carbide Village
+    "tubod_carbide": ["des_wing","tomntoms"],
+
+
+# Tubod-Orellana-C3
+    "tubod_orellana": ["des_wing","tomntoms"],                   
+
+
+# Baraas-Dona Maria
+    "baraas": ["des_wing", "tomntoms"],
+                
+
+# Ubaldo Laya
+    "ubaldo": ["des_wing", "bdo_network"], # outside bounds (areola st > city hall > c3)                
+
+
+# Olas-Ubaldo Laya
+    "olas": ["bdo_network", "des_wing"],
+
+
+# Tipanoy-Landless-Mirador
+    "tipanoy_landless": ["des_wing", "tomntoms"],
+
+
+# Abuno-Tipanoy-Celeste
+    "abuno": ["des_wing", "tomntoms"],
+
+
+# Tipanoy-Pindugangan-Mibolo
+    "tipanoy-pina": ["des_wing", "tomntoms"],
+
+
+# Tipanoy-Mibala
+    "tipanoy_mibala": ["des_wing", "tomntoms"],
+
+# Steeltown
+    "steeltown": ["des_wing", "tomntoms"],
+
+
+# Suarez-Iishai
+    "sua_iishai": ["des_wing", "tomntoms"],
+
+
+# Upper Tominobo-Suarez
+    "tominobo": ["des_wing", "tomntoms"],
+
+# Buruun
+    "buruun": ["des_wing", "tomntoms"],
+
+# Tinago-Maze Park-Tonggo
+    "tinago_maze":["des_wing", "tomntoms"],
+
+# Tinago-Ditucalan
+    "tinago_ditu": ["des_wing", "tomntoms"],
+
+
+# Route 29 - IBJT South -> IBJT North not in bound with our map
+# Route 30 - IBJT South -> IBJT North via C3 not in bound with our map
+
+# Bayanihan-IBJT
+    "bayanihan": ["des_wing", "vanitea"],
+
+
+# Palao-Del Carmen
+    "palao_del": ["landbank", "e_fix"],
+
+
+# Del Carmen-Abegail
+    "del_abegail": ["landbank", "e_fix"],
+}
