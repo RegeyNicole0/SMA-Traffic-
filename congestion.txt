@@ -1,0 +1,126 @@
+##  Badelles St  ##
+vanitea->petron: 10
+    {   tambo-hinaplanon
+        hinaplanon-cabaro   
+        canaway
+        bayug-santiago
+        luinab_bahayan
+        bagong_silang
+        sta_fe
+        dalipuga
+        kalubihon
+        san_lambaguhon
+        }
+
+petron->coop_fuel: 10
+    tambo-hinaplanon, etc.
+
+coop_fuel->daily: 10
+    tambo-hinaplanon, etc.
+
+##  Sabayle  ##
+daily->tc_circle: 12
+    {   tambo-hinaplanon, etc
+        palao_del
+        del_abegail     }
+
+tc_circle->iligan_pier: 6
+    {   tambo-hinaplanon
+        hinaplanon-cabaro   
+        canaway
+        bayug-santiago
+        luinab_bahayan
+        bagong_silang       }
+
+
+##  Bacolod Rd  ##
+iligan_pier->coast_guard: 6
+    {   tambo-hinaplanon
+        hinaplanon-cabaro   
+        canaway
+        bayug-santiago
+        luinab_bahayan
+        bagong_silang       }
+
+coast_guard->nehal_arc: 6
+    tambo-hinaplann, ... bagong_silang
+
+nehal_arc->wet_market: 6
+    tambo-hinaplann, ... bagong_silang
+
+
+##  Nanaman St  ##
+wet_market->pub_market: 6
+    tambo-hinaplann, ... bagong_silang
+
+
+##  Aguinaldo St    ##
+pub_market->ukay_market: 6
+    tambo-hinaplann, ... bagong_silang
+
+ukay_market->dunkin: 8
+    {   tambo-hinaplanon
+        hinaplanon-cabaro   
+        canaway
+        bayug-santiago
+        luinab_bahayan
+        bagong_silang
+        palao_del
+        del_abegail     }
+
+dunkin->bike_ent: 8
+    tambo-hinaplann, ... bagong_silang, palao_del, del_abegail
+
+bike_ent->pulis_agu: 8
+    tambo-hinaplann, ... bagong_silang, palao_del, del_abegail
+
+pulis_agu->mc_hotel: 8
+    tambo-hinaplann, ... bagong_silang, palao_del, del_abegail
+
+mc_hotel->pater: 8
+    tambo-hinaplann, ... bagong_silang, palao_del, del_abegail
+
+pater->mot_race: 8
+    tambo-hinaplann, ... bagong_silang, palao_del, del_abegail
+
+mot_race->zoey: 8
+    tambo-hinaplann, ... bagong_silang, palao_del, del_abegail
+
+zoey->shoppe_24: 2
+    palao_del, del_abegail
+
+
+##  Ramiro St   ##
+zoey->unitop: 6
+    tambo-hinaplann, ... bagong_silang
+
+unitop->techtalk: 6
+    tambo-hinaplann, ... bagong_silang
+
+    
+
+
+##  T. Cabili Ave.  ##
+tc_circle->gaisano_old: 6
+    {   sta_fe
+        dalipuga
+        kalubihon
+        san_lambaguhon
+        palao_del
+        del_abegail    }
+
+gaisano_old->ukay_market: 2
+    {   palao_del
+        del_abegail     }
+
+##  Quezon Ave.  ##
+gaisano_old->halal_meat: 4
+    {   sta_fe
+        dalipuga
+        kalubihon
+        san_lambaguhon     }
+
+unitop->galaxy_mart: 2
+    {   palao_del
+        del_abegail     }
+

@@ -22,7 +22,7 @@ routes = {
     "canaway": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("iligan_pier", 113),
                 ("coast_guard", 110), ("nehal_arc", 141), ("wet_market", 37), ("pub_market", 112), ("ukay_market", 80), ("dunkin", 113), 
                 ("bike_ent", 96), ("pulis_agu", 39), ("mc_hotel", 63), ("pater", 46), ("mot_race", 46), ("zoey", 39), ("unitop", 85), 
-                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50),
+                ("techtalk", 93), ("frapella", 32), ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), 
                 ("gaisano_mall", 124), ("vanitea", 192)],
 
 # Bayug-Santiago-IBJT (Route 5)
