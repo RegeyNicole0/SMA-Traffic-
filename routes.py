@@ -48,24 +48,24 @@ routes = {
  
 # Sta. Filomena-Acmac
     "sta_fe": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano_old", 193), ("halal_meat", 114),
-                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("techtalk", 93), ("frapella", 32), 
                      ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("gaisano_mall", 124), ("vanitea", 192)],
 
 
 # Dalipuga - Vista Village
     "dalipuga": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano_old", 193), ("halal_meat", 114),
-                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("techtalk", 93), ("frapella", 32), 
                      ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("gaisano_mall", 124), ("vanitea", 192)],
 
 
 # Kalubihon
     "kalubihon": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano_old", 193), ("halal_meat", 114),
-                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("techtalk", 93), ("frapella", 32), 
                      ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("gaisano_mall", 124), ("vanitea", 192)],
 
 # San Roque - Lambaguhon
     "san_lambaguhon": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano_old", 193), ("halal_meat", 114),
-                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("techtalk", 93), ("frapella", 32), 
                      ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("gaisano_mall", 124), ("vanitea", 192)],
 
 
@@ -223,58 +223,44 @@ start_end = {
 # Sta. Filomena-Acmac
     "sta_fe": ["vanitea", "gaisano_mall"],
 
-
 # Dalipuga - Vista Village
     "dalipuga": ["vanitea", "gaisano_mall"],
-
 
 # Kalubihon
     "kalubihon": ["vanitea", "gaisano_mall"],
 
-
 # San Roque - Lambaguhon
     "san_lambaguhon": ["vanitea", "gaisano_mall"],
-
 
 # Tambacan
     "tambacan": ["tambacan", "des_wing"],
 
-
 # Tubod-Rosario Heights
     "tubod_rosario": ["des_wing","tomntoms"],
-
 
 # Tubod-Carbide Village
     "tubod_carbide": ["des_wing","tomntoms"],
 
-
 # Tubod-Orellana-C3
     "tubod_orellana": ["des_wing","tomntoms"],                   
-
 
 # Baraas-Dona Maria
     "baraas": ["des_wing", "tomntoms"],
                 
-
 # Ubaldo Laya
     "ubaldo": ["des_wing", "bdo_network"], # outside bounds (areola st > city hall > c3)                
-
 
 # Olas-Ubaldo Laya
     "olas": ["bdo_network", "des_wing"],
 
-
 # Tipanoy-Landless-Mirador
     "tipanoy_landless": ["des_wing", "tomntoms"],
-
 
 # Abuno-Tipanoy-Celeste
     "abuno": ["des_wing", "tomntoms"],
 
-
 # Tipanoy-Pindugangan-Mibolo
     "tipanoy-pina": ["des_wing", "tomntoms"],
-
 
 # Tipanoy-Mibala
     "tipanoy_mibala": ["des_wing", "tomntoms"],
@@ -282,10 +268,8 @@ start_end = {
 # Steeltown
     "steeltown": ["des_wing", "tomntoms"],
 
-
 # Suarez-Iishai
     "sua_iishai": ["des_wing", "tomntoms"],
-
 
 # Upper Tominobo-Suarez
     "tominobo": ["des_wing", "tomntoms"],
@@ -299,17 +283,11 @@ start_end = {
 # Tinago-Ditucalan
     "tinago_ditu": ["des_wing", "tomntoms"],
 
-
-# Route 29 - IBJT South -> IBJT North not in bound with our map
-# Route 30 - IBJT South -> IBJT North via C3 not in bound with our map
-
 # Bayanihan-IBJT
     "bayanihan": ["des_wing", "vanitea"],
 
-
 # Palao-Del Carmen
     "palao_del": ["landbank", "e_fix"],
-
 
 # Del Carmen-Abegail
     "del_abegail": ["landbank", "e_fix"],
