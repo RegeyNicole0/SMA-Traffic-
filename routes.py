@@ -48,24 +48,24 @@ routes = {
  
 # Sta. Filomena-Acmac
     "sta_fe": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano_old", 193), ("halal_meat", 114),
-                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("techtalk", 93), ("frapella", 32), 
                      ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("gaisano_mall", 124), ("vanitea", 192)],
 
 
 # Dalipuga - Vista Village
     "dalipuga": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano_old", 193), ("halal_meat", 114),
-                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("techtalk", 93), ("frapella", 32), 
                      ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("gaisano_mall", 124), ("vanitea", 192)],
 
 
 # Kalubihon
     "kalubihon": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano_old", 193), ("halal_meat", 114),
-                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("techtalk", 93), ("frapella", 32), 
                      ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("gaisano_mall", 124), ("vanitea", 192)],
 
 # San Roque - Lambaguhon
     "san_lambaguhon": [("vanitea", 0), ("petron", 243), ("coop_fuel", 140), ("daily", 190), ("tc_circle", 261), ("gaisano_old", 193), ("halal_meat", 114),
-                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("tecktalk", 93), ("frapella", 32), 
+                     ("dnp", 99), ("pnb", 45), ("penshoppe", 102), ("galaxy_mart", 46), ("unitop", 46), ("techtalk", 93), ("frapella", 32), 
                      ("avila_learn", 40), ("tita_fan", 45), ("mackis", 40), ("desmark", 60), ("emcor", 50), ("gaisano_mall", 124), ("vanitea", 192)],
 
 
