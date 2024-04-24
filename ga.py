@@ -61,15 +61,17 @@ class Solution:
             overall_weight += route[1]['total_weight']
         return overall_weight
 
-    def get_vehicle_count_matrix(self):
+    def get_vehicle_edge_counts(self):
+        # Vehicle Count Matrix is the count of vehicles that go through an edge for all edges.
         routes = self.get_path_choices()
-        count_matrix = defaultdict(dict)
+        counts = defaultdict(lambda: defaultdict(int))
+
         for route in routes:
-            print(route)
             path = route[1]['path']
             for i in range(len(path) - 1):
-                print(path[i], path[i+1])
-            print('------')
+                counts[path[i]][path[i+1]] += 1
+        
+        return counts
 
 
 # class Population:
@@ -106,13 +108,17 @@ if __name__ == "__main__":
         routes.append(route)
 
     solution = Solution(routes=routes, graph=graph)
-    for i in range(2):
-        for idx, path_choice in enumerate(solution.get_path_choices()):
-            print(path_choice[0])
-            print(path_choice[1])
-            solution.randomize_one_path(idx)    
-        print('-----------------------------')
+    for idx, path_choice in enumerate(solution.get_path_choices()):
+        print(path_choice[0])
+        print(path_choice[1])
+    print('-----------------------------')
     
-    solution.get_vehicle_count_matrix()
-    print(f"Overall weight {solution.get_overall_weight()}")
+    new_counts = solution.get_vehicle_edge_counts()
+    current_counts = utils.get_current_vehicle_edge_counts()
         
+    for outer, inner_dict in new_counts.items():
+        for inner, count in inner_dict.items():
+            print(f"{outer} -> {inner}: new count: {count} previous: {current_counts[outer][inner]}")
+
+    print(f"\n New overall weight: {solution.get_overall_weight()}")
+    print(f"Previous overall weight: {utils.get_current_overall_route_weight()}")

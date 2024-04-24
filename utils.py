@@ -1,5 +1,7 @@
 from nodes import landmarks
+from collections import defaultdict
 from routes import start_end
+from routes import routes as iligan_routes
 
 # Function for Depth-First Search (DFS) to find all paths
 def dfs_all_paths(graph, current_node, end_node, waypoints, path, paths, num_visited, total_weight, max_length=34, memo=None):
@@ -57,3 +59,21 @@ def find_paths_for_route(graph, start_node, end_node, waypoints, max_length=34):
     paths = []
     dfs_all_paths(graph, start_node, end_node, waypoints, [], paths, num_visited=0, total_weight=0, max_length=max_length, memo={})
     return paths
+
+def get_current_overall_route_weight():
+    overall_weight = 0
+    for route_name, path in iligan_routes.items():
+        for p in path:
+            overall_weight += p[1]
+
+    return overall_weight
+
+def get_current_vehicle_edge_counts():
+    counts = defaultdict(lambda: defaultdict(int))
+    for route_name, path in iligan_routes.items():
+        path_taken = [ p[0] for p in path]
+        for i in range(len(path_taken) - 1):
+            counts[path_taken[i]][path_taken[i + 1]] += 1
+    return counts
+
+
