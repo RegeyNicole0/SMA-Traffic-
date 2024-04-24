@@ -1,4 +1,4 @@
-##  Badelles St  ##
+##  M. Badelles St  ##
 vanitea->petron: 10
     {   tambo-hinaplanon
         hinaplanon-cabaro   
@@ -89,6 +89,81 @@ mot_race->zoey: 8
 zoey->shoppe_24: 2
     palao_del, del_abegail
 
+shoppe_24->ball_4k: 2
+    palao_del, del_abegail
+
+ball_4k->orix: 2
+    palao_del, del_abegail
+
+orix->crown: 2
+    palao_del, del_abegail
+
+crown->mejia_bldg: 2 
+    palao_del, del_abegail
+
+mejia_bldg->coinsaver: 11
+    {   palao_del
+        del_abegail
+        tubod_rosario
+        tubod_carbide
+        tubod_orellana
+        baraas
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        tinago_ditu         }
+
+coinsaver->chandis: 11
+    palao_del, ..., tinago_ditu
+
+chandis->meat_shop: 7
+    {   palao_del
+        del_abegail
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        tinago_ditu         }
+
+meat_shop->sym: 2
+    palao_del, del_abegail
+
+
+##  LLaya St    ##
+meat_shop->pugaan_term: 11
+    {   tambacan
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        steeltown
+        sua_iishai
+        tominobo
+        buruun
+        tinago_maze
+        tinago_ditu     }
+
+pugaan_term->min_burger: 11
+    tambacan, ..., tinago_ditu
+
+min_burger->pugaan_term: 1
+    pugaan
+
+coco_pet->meat_shop: 6
+    {   tambacan
+        steeltown
+        sua_iishai
+        tominobo
+        buruun
+        tinago_maze     }
+
+##  Bernardo Picardal St    ##
+chandis->mottrad_villa: 4
+    {   tubod_rosario
+        tubod_carbide
+        tubod_orellana
+        baraas          }
 
 ##  Ramiro St   ##
 zoey->unitop: 6
@@ -99,7 +174,83 @@ unitop->techtalk: 6
 
 
 ##  Zamora St   ##
-techtalk->frapella
+techtalk->frapella: 10
+    {   tambo-hinaplanon
+        hinaplanon-cabaro   
+        canaway
+        bayug-santiago
+        luinab_bahayan
+        bagong_silang
+        sta_fe
+        dalipuga
+        kalubihon
+        san_lambaguhon      }
+
+frapella->avila_learn: 10
+    tambo-hinaplanon, ..., san_lambaguhon
+
+avila_learn->tita_fan: 10
+    tambo-hinaplanon, ..., san_lambaguhon
+
+tita_fan->mackis: 10
+    tambo-hinaplanon, ..., san_lambaguhon
+
+mackis->desmark: 10
+    tambo-hinaplanon, ..., san_lambaguhon
+
+
+
+##  Roxas Ave   ##
+desmark->emcor: 11
+    tambo-hinaplanon, ..., san_lambaguhon, bayanihan
+
+emcor->gaisano_mall: 11
+    tambo-hinaplanon, ..., san_lambaguhon, bayanihan
+
+gaisano_mall->vanitea: 11
+    tambo-hinaplanon, ..., san_lambaguhon, bayanihan
+
+ncip->post_off: 1
+    bayanihan
+
+tomntoms->des_wing: 16
+    tambacan, ..., tinago_ditu, olas
+
+des_wing->tomntoms: 16
+    {   tubod_rosario
+        tubod_carbide
+        tubod_orellana
+        baraas
+        ubaldo
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        steeltown
+        sua_iishai
+        tominobo
+        buruun
+        tinago_maze
+        tinago_ditu
+        bayanihan       }
+
+tomntoms->lanastida: 16
+    tubod_rosario, ..., bayanihan
+
+lanastida->doc_uy: 10
+    {   tubod_rosario
+        tubod_carbide
+        tubod_orellana
+        baraas
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        tinago_ditu
+        bayanihan       }
+
+doc_uy->mejia_bldg: 10
+    tubod_rosario, ..., bayanihan
 
 
 ##  T. Cabili Ave.  ##
@@ -126,3 +277,163 @@ unitop->galaxy_mart: 2
     {   palao_del
         del_abegail     }
 
+min_burger->mottrad_villa: 13
+    {   palao_del
+        del_abegail
+        tambacan
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        steeltown
+        sua_iishai
+        tominobo
+        buruun
+        tinago_maze
+        tinago_ditu     }
+
+mottrad_villa->ncip: 17
+    {   palao_del
+        del_abegail
+        tambacan
+        tubod_rosario
+        tubod_carbide
+        tubod_orellana
+        baraas
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        steeltown
+        sua_iishai
+        tominobo
+        buruun
+        tinago_maze
+        tinago_ditu    }
+
+
+ncip->bpi: 17
+    {   palao_del
+        del_abegail
+        tambacan
+        tubod_rosario
+        tubod_carbide
+        tubod_orellana
+        baraas
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        steeltown
+        sua_iishai
+        tominobo
+        buruun
+        tinago_maze
+        tinago_ditu    }
+
+
+bpi->sec_bank: 17
+    tambacan, ..., tinago_ditu
+
+sec_bank->watsons: 17
+    tambacan, ..., tinago_ditu
+
+watsons->unitop: 2
+    palao_del, del_abegail
+
+
+##  Echiverri St    ##
+watsons->shoppe_24: 15
+    tambacan, ..., tinago_ditu
+
+shoppe_24->ortiz: 15
+    {   tambacan
+        tubod_rosario
+        tubod_carbide
+        tubod_orellana
+        baraas
+        tipanoy_landless    
+        abuno
+        tipanoy-pina
+        tipanoy_mibala
+        steeltown
+        sua_iishai
+        tominobo
+        buruun
+        tinago_maze
+        tinago_ditu         }
+
+ortiz->qa_plaza: 15
+    tambacan, ..., tinago_ditu
+
+qa_plaza->citi_alley: 16
+    tambacan, ..., tinago_ditu, olas
+
+
+##  Araneta St  ##
+citi_alley->coast_wat:16
+    tambacan, ..., tinago_ditu, olas
+
+coast_wat->ziga_teck: 16
+    tambacan, ..., tinago_ditu, olas
+
+ziga_teck->sapp_ara: 16
+    tambacan, ..., tinago_ditu, olas
+
+sapp_ara->tomntoms: 16
+    tambacan, ..., tinago_ditu, olas
+
+
+
+##  Badelles Ext    ##
+lanastida->phoenix_gas: 7
+    {   tambacan
+        ubaldo
+        steeltown
+        sua_iishai
+        tominobo
+        buruun
+        tinago_maze     }
+
+phoenix_gas->palao_mrkt: 7
+    tambacan, ..., tinago_maze
+
+phoenix_gas->lanastida: 1
+    olas
+
+palao_mrkt->puregold: 7
+    tambacan, ..., tinago_maze
+
+puregold->phoenix_gas: 1
+    olas
+
+puregold->coco_pet: 7
+    tambacan, ..., tinago_maze
+
+coco_pet->pc_ilgn: 1
+    ubaldo
+
+coco_pet->puregold: 1
+    olas
+
+##  Badelles St.    ##
+lanastida->mayo_dia: 1
+    olas
+
+mayo_dia->pondoc: 1
+    olas
+
+pondoc->mayo_dia: 1
+    tambacan
+
+pondoc->new_flash: 1 
+    olas
+
+new_flash->qa_plaza: 1 
+    olas
+
+new_flash->pondoc: 1
+    tambacan
+
+sym -> e_fix: count: 2
+e_fix -> landbank: count: 3
