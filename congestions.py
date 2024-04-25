@@ -32,6 +32,30 @@ one_lanes = [
     ("learnfast","mc_hotel"),
     ("glo_flash","pop_rock"),
     ("doc_uy","pop_rock"),
+    ("fire_safe", "pnb"),
+    ("pnb","fire_safe"),
+    ("megatech","min_burger"),
+    ("min_burger","megatech"),
+    ("iligan_deal","phoenix_lpg"),
+    ("phoenix_lpg","iligan_deal"),
+    ("mot_race","fount_acad"),
+    ("fount_acad","mot_race"),
+    ("shoppe_24","ortiz"),
+    ("ortiz","shoppe_24"),
+    ("sapp_ara","icnhs"),
+    ("icnhs","sapp_ara"),
+    ("coinsaver","phoenix_gas"),
+    ("phoenix_gas","coinsaver"),
+    ("puregold","comelec"),
+    ("comelec","puregold"),
+    ("pc_ilgn","phoenix_lpg"),
+    ("phoenix_lpg","pc_ilgn"),
+    ("bdo_network","landbank"),
+    ("landbank","bdo_network"),
+    ("post_off","epson"),
+    ("epson","post_off"),
+    ("uncle_brew","emcor"),
+    ("emcor","uncle_brew"),
 ]
 
 two_lanes = [
@@ -45,6 +69,10 @@ two_lanes = [
     ("gaisano_old","landbank"),
     ("petron","coop_fuel"),
     ("coop_fuel","petron"),
+    ("ball_4k","cq_print"),
+    ("ortiz","citi_alley"),
+    ("citi_alley","tomntoms"),
+    ("zoey","gsis")
 ]
 
 three_lanes = [

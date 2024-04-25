@@ -243,7 +243,7 @@ if __name__ == "__main__":
     for outer, inner_dict in new_counts.items():
         for inner, count in inner_dict.items():
             con = utils.get_acceptable_congestion(outer, inner, debug=True)
-            print(f"{outer} -> {inner}: new count: {count} previous: {current_counts[outer][inner]} acceptable: {con}")
+            # print(f"{outer} -> {inner}: new count: {count} previous: {current_counts[outer][inner]} acceptable: {con}")
             
 
     print(solution.get_fitness()) 
