@@ -131,7 +131,7 @@ landmarks = {
     "pc_ilgn": [("bdo_network", 61), ("coco_pet", 60), ("phoenix_lpg", 85)],
     "phoenix_lpg": [("megatech", 57), ("pc_ilgn", 85)],
     "e_fix": [("landbank", 50)],
-    "pugaan_term": [("min_burger", 45), ("e_fix", 114)],
+    "pugaan_term": [("min_burger", 45), ("e_fix", 114), ("meat_shop", 50)],
     "landbank": [("min_burger", 116), ("e_fix", 50)],
     # "colorchart": ["landbank", "sym"]
 }

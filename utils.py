@@ -81,8 +81,6 @@ def get_current_overall_route_avg():
     
     return np.mean(path_lengths)
 
-
-
 def get_current_vehicle_edge_counts():
     counts = defaultdict(lambda: defaultdict(int))
     for route_name, path in iligan_routes.items():
@@ -125,6 +123,17 @@ def check_all_acceptable_congestion(counts):
         if not res:
             break
     return res
+
+def get_acceptable_congestion_rate(counts):
+    total = 0
+    acceptable = 0
+    for outer, inner_dict in counts.items():
+        for inner, count in inner_dict.items():
+            total += 1
+            if count/30 <= get_acceptable_congestion(outer, inner):
+                acceptable +=1
+    
+    return [acceptable/total, total, acceptable]
 
 def get_maximum_congestion_normalized(counts):
     congestions = []
