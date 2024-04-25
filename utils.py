@@ -132,6 +132,8 @@ def get_acceptable_congestion_rate(counts):
             total += 1
             if count/30 <= get_acceptable_congestion(outer, inner):
                 acceptable +=1
+            else:
+                print(f"Congestion at ({outer},{inner}) : {count/30} ")
     
     return [acceptable/total, total, acceptable]
 
