@@ -17,7 +17,7 @@ landmarks = {
     "petron": [("coop_fuel", 140), ("uncle_brew", 170), ("vanitea", 243)],
     "coop_fuel": [("daily", 190), ("octagon", 160 ), ("petron", 140)],
     # "octagon": [("coop_fuel", 160)], one way
-    "octagon": [("coop_fuel", 160), ("fire_safe", 95), ("abest", 50)], 
+    "octagon": [("coop_fuel", 160), ("penshoppe", 91), ("fire_safe", 95), ("abest", 50)], 
     # "abest": [("octagon", 50)], one way
     "abest": [("octagon", 50), ("techtalk", 56)],
     # "techtalk": [("abest", 56)], one way
@@ -102,7 +102,7 @@ landmarks = {
     "tomntoms": [("des_wing", 59), ("lanastida", 63)],
     "lanastida": [("tomntoms", 63), ("mayo_dia", 53), ("phoenix_gas", 218), ("doc_uy", 46)],
     "doc_uy": [("lanastida", 46), ("pop_rock", 58), ("mejia_bldg", 46)],
-    "mejia_bldg": [("doc_uy", 46), ("crown", 60), ("coinsaver", 208), ("mshoes", 37)],
+    "mejia_bldg": [("doc_uy", 46), ("coinsaver", 208), ("mshoes", 37)],
     "mshoes": [("mejia_bldg", 37), ("st_michaels", 57), ("ncip", 47)],
     "ncip": [("mshoes", 47), ("bpi", 59), ("mottrad_villa", 292), ("post_off", 51)],
     "post_off": [("ncip", 51), ("epson", 58), ("desmark", 52)],
@@ -131,7 +131,7 @@ landmarks = {
     "pc_ilgn": [("bdo_network", 61), ("coco_pet", 60), ("phoenix_lpg", 85)],
     "phoenix_lpg": [("megatech", 57), ("pc_ilgn", 85)],
     "e_fix": [("landbank", 50)],
-    "pugaan_term": [("min_burger", 45), ("e_fix", 114)],
+    "pugaan_term": [("min_burger", 45), ("e_fix", 114), ("meat_shop", 50)],
     "landbank": [("min_burger", 116), ("e_fix", 50)],
     # "colorchart": ["landbank", "sym"]
 }
