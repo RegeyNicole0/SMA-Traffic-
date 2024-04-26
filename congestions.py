@@ -35,8 +35,16 @@ one_lanes = [
     ("pc_ilgn","coco_pet"),
     ("pc_ilgn","bdo_network"),
     ("bdo_network","pc_ilgn"),
-    ("desmark","fire_safe"),
-    ("fire_safe","desmark"),
+    ("desmark","mackis"),
+    ("mackis","tita_fan"),
+    ("tita_fan","avila_learn"),
+    ("avila_learn","frapella"),
+    ("frapella","techtalk"),
+    ("techtalk","abest"),
+    ("abest","octagon"),
+    ("octagon","fire_safe"),
+
+    #("fire_safe","desmark"),
 
 
     ("halal_meat", "dunkin"),
@@ -211,8 +219,8 @@ three_lanes = [
     ("post_off","desmark"),
     ("post_off","ncip"),
     ("ncip","post_off"),
-    ("tc_circle","gaisano_old"),
-    ("gaisano_old","tc_circle")
+    ("tc_circle","gaisano_old"), 
+    ("gaisano_old","tc_circle"),
     ("pub_market","ukay_market"),
     ("ukay_market","dunkin"),
     ("dunkin","bike_ent"),
