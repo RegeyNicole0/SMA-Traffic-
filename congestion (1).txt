@@ -40,26 +40,26 @@ Two-Lane Roads
     Palao Mrkt to Iligan Deal (Two Way) x
     Iligan Deal to phoenix_lpg (Two Way) x
     MC Hotel to Learnfast (Two Way) x
-    Mot Race - Fount Acad (Two Way) 
-    Shoppe 24 to Ortiz (Two Way)
-    Sapp Ara to ICNHS (Two Way)
-    coinsaver to phoenix gas (Two Way)
-    Puregold to Comelec (Two Way)
-    PC_Ilgn to Phoenix LPG (Two Way)
-    BDO Network to Landbank (Two Way)
-    Post Off to Epson (Two Way)
-    Uncle Brew to Emcor (Two Way)
-    Orix to Deja Teu (One Way)
-    Ball 4k to CQ Print (One Way)
-    Ortiz to Citi Alley (One Way)
-    Citi Alley to TomnToms (One Way)
-    Gaisano Old to Pub Market (One Way)
-    Gaisano Old to Ukay Market (One Way)
-    Nehal Arc to Iligan Pier (One Way)
-    Meat Shop to SYM (One Way)
-    Gloflash to Pop Rock (One Way)
-    Dr. Uy to Pop Rock (One Way)
-    Zoey to GSIS (One Way)
+    Mot Race - Fount Acad (Two Way) x
+    Shoppe 24 to Ortiz (Two Way) x
+    Sapp Ara to ICNHS (Two Way) x 
+    coinsaver to phoenix gas (Two Way) x
+    Puregold to Comelec (Two Way) x 
+    PC_Ilgn to Phoenix LPG (Two Way) x 
+    BDO Network to Landbank (Two Way) x
+    Post Off to Epson (Two Way) x
+    Uncle Brew to Emcor (Two Way) x 
+    --Orix to Deja Teu (One Way)
+    Ball 4k to CQ Print (One Way) x
+    Ortiz to Citi Alley (One Way) -- one way but from citi_alley to ortiz siya na direction
+    Citi Alley to TomnToms (One Way) x
+    Gaisano Old to Pub Market (One Way) x
+    Gaisano Old to Ukay Market (One Way) x
+    Nehal Arc to Iligan Pier (One Way) -- one way is from iliganpier to nehal_arc direction
+    Meat Shop to SYM (One Way)  x 
+    Gloflash to Pop Rock (One Way) x
+    Dr. Uy to Pop Rock (One Way) -- one way but the direction should be from pop_rock to doc_uy
+    Zoey to GSIS (One Way) x
     Palao Mrkt to MotTrad Villa (One Way)
    
 Single-Lane Roads
