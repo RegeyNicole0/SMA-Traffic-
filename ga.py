@@ -4,6 +4,7 @@ import utils
 import random
 from collections import defaultdict
 import numpy as np
+from tabulate import tabulate
 
 graph = landmarks
 
@@ -91,18 +92,21 @@ class Solution:
         avg_congestion_diff = utils.get_average_congestion_diff(self. current_counts, new_counts)
         max_congestion = utils.get_maximum_congestion_normalized(new_counts)
         avg_congestion = utils.get_average_congestion_normalized(new_counts)
-        acceptable_congestion = utils.check_all_acceptable_congestion(new_counts)
-
-        if not acceptable_congestion: return 0
-
-        normalized_scores = new_overall_weights/100000 \
-                            + new_overall_weights_avg/10000 \
-                            + avg_congestion_diff/30 \
-                            + max_congestion[0] / 10  \
-                            + avg_congestion / 10
+        acceptable_congestion_rate = utils.get_acceptable_congestion_rate(new_counts)
+        all_acceptable_congestion = int(utils.check_all_acceptable_congestion(new_counts))
         
-        normalized_scores = normalized_scores / 5
-        return 1 - normalized_scores
+
+        normalized_scores = (1 - new_overall_weights/100000) \
+                            + 3 * (1 - new_overall_weights_avg/10000) \
+                            + 4 * (1- (avg_congestion_diff/30)) \
+                            + 4 * (1 - (max_congestion[0] / 10))  \
+                            + 4 * (1 - (avg_congestion / 10)) \
+                            + 20 * acceptable_congestion_rate[0] \
+                            + 36 * all_acceptable_congestion
+
+        
+        normalized_scores = normalized_scores / 72
+        return normalized_scores
 
 class Population:    
     
@@ -113,7 +117,7 @@ class Population:
                                 current_counts=current_counts,
                                 current_overall_weight_avg=current_overall_weight_avg,
                                 current_overall_weights=current_overall_weights)
-                        for _ in self.population_size
+                        for _ in range(self.population_size)
                         ]
 
     def get_fittest(self):
@@ -142,7 +146,7 @@ class GeneticAlgorithm:
         self.elitism_param = elitism_param
         self.routes = routes
         self.graph = graph
-        self.current_counts - current_counts
+        self.current_counts = current_counts
         self.current_overall_weight_avg = current_overall_weight_avg
         self.current_overall_weights = current_overall_weights
 
@@ -153,12 +157,17 @@ class GeneticAlgorithm:
                         current_counts=self.current_counts,
                         current_overall_weights=self.current_overall_weights,
                         current_overall_weight_avg=self.current_overall_weight_avg)
-
         generation_counter = 0
 
-        while generation_counter < 100:
+        while generation_counter < 10:
             generation_counter += 1
+            current_best = max(pop.sols, key=lambda p: p.get_fitness())
+
+            print(f"Gen: {generation_counter} fitness: {current_best.get_fitness()}")
             pop = self.evolve_population(pop)
+        
+
+        return max(pop.sols, key=lambda p: p.get_fitness())
 
         
     def evolve_population(self, population):
@@ -172,17 +181,23 @@ class GeneticAlgorithm:
         # elitism: the top fittest individuals from previous population survive
         # so we copy the top 10 individuals to the next iteration (next population)
         # in this case the population fitness can not decrease during the iterations
-        next_population.sols.extend(population.get_fittest_elitism(self.elitism_param))
+        # next_population.sols.extend(population.get_fittest_elitism(self.elitism_param))
+        next_population.sols = population.get_fittest_elitism(self.elitism_param) + next_population.sols
 
+        # for sol in next_population.sols:
+        #     print(sol.get_fitness())
         # crossover
         for index in range(self.elitism_param, next_population.get_size()):
-            first = self.random_selection(population)
-            second = self.random_selection(population)
-            next_population.save_sols(index, self.crossover(first, second))
+            if random.uniform(0,1) <= self.crossover_rate:
+                first = self.random_selection(population)
+                second = self.random_selection(population)
+                next_population.save_sol(index, self.crossover(first, second))
 
         # mutation
-        for individual in next_population.sols:
-            self.mutate(individual)
+        for index in range(self.elitism_param, next_population.get_size()):
+            self.mutate(next_population.sols[index])
+        # for individual in next_population.sols:
+        #     self.mutate(individual)
 
         return next_population
 
@@ -191,33 +206,31 @@ class GeneticAlgorithm:
             graph=self.graph,
             current_counts=self.current_counts,
             current_overall_weights=self.current_overall_weights,
-            current_overall_weight_avg=self.current_overall_weight_avg
+            current_overall_weight_avg=self.current_overall_weight_avg,
+            routes=self.routes
         )
 
-        start = random.randin(len(parent1.paths))
-        end = random.randint(len(parent1.paths))
+        start = random.randint(0, len(parent1.paths)-1)
+        end = random.randint(0,len(parent1.paths)-1)
 
         if start > end:
             start, end = end, start
         
-        cross_sol.paths = parent1.paths[:start] + parent2.paths[start:end] + parent2.paths[end:]
-
+        cross_sol.paths = parent1.paths[:start] + parent2.paths[start:end] + parent1.paths[end:]
         return cross_sol                 
+
     def mutate(self, individual):
         for i in range(len(individual.paths)):
             if random.uniform(0, 1) <= self.mutation_rate:
                 individual.randomize_one_path(i)    
 
     def random_selection(self, actual_population):
-        new_population = Population(self.population_size)
-        for i in range(new_population.get_size()):
-            random_index = random.randint(new_population.get_size())
-            new_population.save_sol(i, actual_population.get_sol(random_index))
-
-        return new_population.get_fittest()
+        parents = random.sample(actual_population.sols, k=20)
+        return max(parents, key = lambda p: p.get_fitness())
     
 
 if __name__ == "__main__":
+    print("Building Routes...")
     routes = []
     for route_name, route_nodes in start_end.items():
         waypoints = []
@@ -229,21 +242,66 @@ if __name__ == "__main__":
     current_counts = utils.get_current_vehicle_edge_counts()
     current_overall_weights = utils.get_current_overall_route_weight()
     current_overall_weight_avg = utils.get_current_overall_route_avg()
+    current_average_congestion = utils.get_average_congestion_normalized(current_counts)
 
-    solution = Solution(routes=routes, graph=graph, current_counts=current_counts, current_overall_weight_avg=current_overall_weight_avg, current_overall_weights=current_overall_weights)
+    print("Running GA...")
+    algorithm = GeneticAlgorithm(
+        routes=routes,
+        graph=graph,
+        current_counts=current_counts,
+        current_overall_weight_avg=current_overall_weight_avg,
+        current_overall_weights=current_overall_weights,
+        population_size=100,
+        crossover_rate=0.4,
+        mutation_rate=1,
+        elitism_param=30
+    )
 
-    for idx, path_choice in enumerate(solution.get_path_choices()):
-        print(path_choice[0])
-        print(path_choice[1])
-    print('-----------------------------')
-    
-    new_counts = solution.get_vehicle_edge_counts()
-    current_counts = utils.get_current_vehicle_edge_counts()
-        
-    for outer, inner_dict in new_counts.items():
+    best = algorithm.run()
+    best_path_choices = best.get_path_choices()
+    best_overall_weight = best.get_overall_weight()
+    best_overall_weight_avg = best.get_overall_weight_ave()
+    best_vehicle_edge_counts = best.get_vehicle_edge_counts()
+    best_average_congestion = utils.get_average_congestion_normalized(best_vehicle_edge_counts)
+
+    data = []
+    for outer, inner_dict in best_vehicle_edge_counts.items():
         for inner, count in inner_dict.items():
-            con = utils.get_acceptable_congestion(outer, inner, debug=True)
-            # print(f"{outer} -> {inner}: new count: {count} previous: {current_counts[outer][inner]} acceptable: {con}")
-            
+            acceptable_congestion = utils.get_acceptable_congestion(outer, inner)
+            current_count = current_counts[outer][inner]
+            new_count = best_vehicle_edge_counts[outer][inner]
+            current_congestion = current_count / 30
+            new_congestion = new_count / 30
+            con_pass = new_congestion <= acceptable_congestion
+            data.append([f"{outer}->{inner}", current_count, new_count, current_congestion, new_congestion, acceptable_congestion, con_pass])
+    headers = ["Edge", "Vehicle Count", "New Vehicle Count", "Congestion", "New Congestion","Acceptable", "Accepted"] 
 
-    print(solution.get_fitness()) 
+    table = tabulate(data, headers=headers, tablefmt="grid")
+    c_con_rate = utils.get_acceptable_congestion_rate(current_counts)
+    n_con_rate = utils.get_acceptable_congestion_rate(best_vehicle_edge_counts)
+
+    with open("results.txt", "w") as f:
+        f.write(table)
+        f.write(f"\nCurrent Overall Weight {current_overall_weights}")
+        f.write(f"\nCurrent Overall Weight Avg {current_overall_weight_avg}")
+        f.write(f"\nCurrent Congestion | Accepted {c_con_rate[2]}/{c_con_rate[1]} Rate: {c_con_rate[0]}")
+        f.write(f"\nCurrent Average Congestion {current_average_congestion}\n")
+        f.write(f"-"*50)
+        f.write(f"\nNew Overall Weight {best_overall_weight}")
+        f.write(f"\nNew Overall Weight Avg {best_overall_weight_avg}")
+        f.write(f"\nNew Congestion | Accepted {n_con_rate[2]}/{n_con_rate[1]} Rate: {n_con_rate[0]}")
+        f.write(f"\nNew Average Congestion {best_average_congestion}")
+    
+    with open("paths.txt", "w") as f:
+        for path in best_path_choices:
+            route = path[0]
+            path_taken = path[1]['path']
+            f.write("-"*50)
+            f.write(f"\nRoute {route} | Nodes Visited {path[1]['num_visited']} | Distance {path[1]['total_weight']}\n")
+            f.write("->".join(path_taken))
+            f.write("\n")
+            f.write("-"*50)
+
+
+    print("results saved to results.txt")
+    print("paths saved to paths.txt")
