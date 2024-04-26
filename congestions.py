@@ -4,9 +4,9 @@ one_lanes = [
     ("octagon","penshoppe"),
     ("penshoppe","octagon"),
     ("penshoppe","pater"),
-    ("pater","penshoppe")
-    ("pater","glo_flash")
-    ("glo_flash","pater")
+    ("pater","penshoppe"),
+    ("pater","glo_flash"),
+    ("glo_flash","pater"),
     ("glo_flash", "tambacan"),
     ("tambacan","glo_flash"),
     ("tambacan", "fount_acad"),
@@ -37,16 +37,15 @@ one_lanes = [
     ("bdo_network","pc_ilgn"),
     ("desmark","fire_safe"),
     ("fire_safe","desmark"),
-
-
     ("halal_meat", "dunkin"),
     ("dnp", "bike_ent"),
     ("pulis_agu", "pera_mpc"),
     ("pera_mpc", "learnfast"),
-
-    ("gaisano_old","pub_market"),
+    ("nehal_arc","wet_market"),
+    ("wet_market","pub_market"),
     ("gaisano_old","ukay_market"),
-    ("nehal_arc","iligan_pier"),
+    ("iligan_pier","coast_guard"),
+    ("coast_guard","nehal_arc"),
     ("pnb","daily"),
     ("daily","pnb"),
     ("emcor","uncle_brew"),
@@ -58,14 +57,20 @@ one_lanes = [
     ("meat_shop","sym"),
     ("meat_shop","min_burger"),
     ("min_burger","meat_shop"),
-    ("palao_mrkt","mottrad_villa"),
+    ("palao_mrkt","chandis"),
+    ("chandis","mottrad_villa"),
     ("palao_mrkt","iligan_deal"),
     ("iligan_deal","palao_mrkt"),
     ("learnfast","glo_flash"),
     ("glo_flash","learnfast"),
     ("mc_hotel", "learnfast"),
     ("learnfast","mc_hotel"),
-    ("glo_flash","pop_rock"),
+    ("glo_flash","red_carp"),
+    ("red_carp","ilaya"),
+    ("ilaya","ortiz"),
+    ("ortiz","dexter"),
+    ("dexter","waynsee"),
+    ("waynsee","pop_rock"),
     ("doc_uy","pop_rock"),
     ("fire_safe", "pnb"),
     ("pnb","fire_safe"),
@@ -91,6 +96,10 @@ one_lanes = [
     ("epson","post_off"),
     ("uncle_brew","emcor"),
     ("emcor","uncle_brew"),
+    ("new_flash","coast_wat"),
+    ("coast_wat","new_flash"),
+    ("coast_wat","cq_print"),
+    ("cq_print","coast_wat"),
 ]
 
 two_lanes = [
@@ -162,15 +171,20 @@ two_lanes = [
     ("halal_meat","dnp"),
     ("halal_meat","gaisano_old"),
     ("gaisano_old","halal_meat"),
-
-    ("ball_4k","cq_print"),
-    ("ortiz","citi_alley"),
-    ("citi_alley","tomntoms"),
-    ("zoey","gsis")
+    ("ball_4k","dexter"),
+    ("dexter","new_flash"),
+    ("ortiz","qa_plaza"),
+    ("qa_plaza","citi_alley"),
+    ("citi_alley","coast_wat"),
+    ("coast_wat","ziga_teck"),
+    ("ziga_teck","sapp_ara"),
+    ("sapp_ara","tomntoms"),
+    ("zoey","ilaya")
+    ("ilaya","gsis")
 ]
 
 three_lanes = [
-    ("vanitea","gaisano_mall")
+    ("vanitea","gaisano_mall"),
     ("gaisano_mall","vanitea"),
     ("gaisano_mall","emcor"),
     ("emcor","gaisano_mall"),
@@ -181,7 +195,7 @@ three_lanes = [
     ("post_off","ncip"),
     ("ncip","post_off"),
     ("tc_circle","gaisano_old"),
-    ("gaisano_old","tc_circle")
+    ("gaisano_old","tc_circle"),
     ("pub_market","ukay_market"),
     ("ukay_market","dunkin"),
     ("dunkin","bike_ent"),
@@ -198,6 +212,7 @@ three_lanes = [
 ]
 
 four_lanes = [
+    ("gaisano_old","nehal_arc"),
     ("mejia_bldg","coinsaver"),
     ("coinsaver","chandis"),
     ("chandis","meat_shop")

@@ -159,7 +159,7 @@ class GeneticAlgorithm:
                         current_overall_weight_avg=self.current_overall_weight_avg)
         generation_counter = 0
 
-        while generation_counter < 10:
+        while generation_counter < 10: #Puwede Patas-an
             generation_counter += 1
             current_best = max(pop.sols, key=lambda p: p.get_fitness())
 
