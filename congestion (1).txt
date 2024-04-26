@@ -1,0 +1,70 @@
+TOTAL ROUTES: 30
+CURRENT CONGESTION LEVELS FOR EACH LANES:
+    4-Lanes : 11 (36%)
+    3-Lanes : 11 (36%)
+    2-Lanes : 17 (56%)
+    1-Lane  : 16 (53%)
+
+PROPOSED CONGESTION LEVELS FOR EACH LANES:
+    4-Lanes : 18 (60%)
+    3-Lanes : 17 (56%)
+    2-Lanes : 17 (56%)
+    1-Lane  : 11 (36%)
+
+Four to Six Lane Roads (Two Way)
+    Gaisano Mall to NCIP (6-lanes) x
+    TC- Circle to Gaisano Old (6-lanes)x
+    Co-op Fuel to TC-Circle (4-lanes)x
+    NCIP to ICNHS (4-lanes) x
+    TC Circle to Iligan Pier (4-lanes)x
+    Landbank to Gaisano Old (4-lanes)x
+    Petron to Sapp Ara (4-lanes)x
+
+Four to Six Lane Roads (One Way)
+    Mejia Bldg to Meat Shop (4-lanes)x
+
+Three-Lane Roads 
+    Petron to Co-op Fuel (3-lanes)x
+    Pub Market to Mejia Bldg (One Way)x
+  
+Two-Lane Roads
+    Co-Op Fuel to Tambacan (Two Way)x
+    Tambacan to BDO Network (Two Way)x
+    Desmark to Fire Safe (Two Way) x
+    Fire Safe to PNB (Two Way) x
+    PNB to Daily (Two Way) x
+    Emcor to Uncle Brew (Two Way) x 
+    ICNHS to Petron (Two Way) x
+    Orix to Deja Teu (Two Way)
+    Mega tech to Min Burger (Two Way)
+    Palao Mrkt to Iligan Deal (Two Way)
+    Iligan Deal to phoenix_lpg (Two Way)
+    Learnfast to Gloflash (Two Way)
+    MC Hotel to Learnfast (Two Way)
+    Mot Race - Fount Acad (Two Way)
+    Shoppe 24 to Ortiz (Two Way)
+    Sapp Ara to ICNHS (Two Way)
+    coinsaver to phoenix gas (Two Way)
+    Puregold to Comelec (Two Way)
+    PC_Ilgn to Phoenix LPG (Two Way)
+    BDO Network to Landbank (Two Way)
+    Post Off to Epson (Two Way)
+    Uncle Brew to Emcor (Two Way)
+    Orix to Deja Teu (One Way)
+    Ball 4k to CQ Print (One Way)
+    Ortiz to Citi Alley (One Way)
+    Citi Alley to TomnToms (One Way)
+    Gaisano Old to Pub Market (One Way)
+    Gaisano Old to Ukay Market (One Way)
+    Nehal Arc to Iligan Pier (One Way)
+    Meat Shop to SYM (One Way)
+    Gloflash to Pop Rock (One Way)
+    Dr. Uy to Pop Rock (One Way)
+    Zoey to GSIS (One Way)
+    Palao Mrkt to MotTrad Villa (One Way)
+   
+Single-Lane Roads
+    Halal Meat to Dunkin 
+    DNP to Bike Ent
+    Pulis Agu to Pera MPC
+    Pera MPC to Learnfast

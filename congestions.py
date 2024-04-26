@@ -37,6 +37,8 @@ one_lanes = [
     ("bdo_network","pc_ilgn"),
     ("desmark","fire_safe"),
     ("fire_safe","desmark"),
+
+
     ("halal_meat", "dunkin"),
     ("dnp", "bike_ent"),
     ("pulis_agu", "pera_mpc"),
@@ -48,10 +50,22 @@ one_lanes = [
     ("coast_guard","nehal_arc"),
     ("pnb","daily"),
     ("daily","pnb"),
+
     ("emcor","uncle_brew"),
     ("uncle_brew","emcor"),
-    ("icnhs","petron"),
-    ("petron","icnhs"),
+
+    ("icnhs","sapp_ara"),
+    ("sapp_ara","mayo_dia"),
+    # ("mayo_dia","pop_rock"),
+    # ("pop_rock","crown"),
+    # ("crown","st_michaels"),
+    ("st_michaels","bpi"),
+    ("bpi","epson"),
+    ("epson","mackis"),
+    ("mackis","uncle_brew"),
+    ("uncle_brew","petron"),
+
+    # ("petron","icnhs"),
     ("orix","deja_teu"),
     ("deja_teu","orix"),
     ("meat_shop","sym"),
@@ -103,6 +117,9 @@ one_lanes = [
 ]
 
 two_lanes = [
+    ("mayo_dia","pop_rock"),
+    ("pop_rock","crown"),
+    ("crown","st_michaels"),
     ("petron", "vanitea"),
     ("vanitea", "petron"),
     ("petron","coop_fuel"),
@@ -195,7 +212,7 @@ three_lanes = [
     ("post_off","ncip"),
     ("ncip","post_off"),
     ("tc_circle","gaisano_old"),
-    ("gaisano_old","tc_circle"),
+    ("gaisano_old","tc_circle")
     ("pub_market","ukay_market"),
     ("ukay_market","dunkin"),
     ("dunkin","bike_ent"),
