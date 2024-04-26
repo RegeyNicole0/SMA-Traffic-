@@ -27,8 +27,10 @@ one_lanes = [
     ("phoenix_gas","lanastida"),
     ("phoenix_gas","palao_mrkt"),
     ("palao_mrkt","phoenix_gas"),
+    
     ("palao_mrkt","puregold"),
     ("puregold","palao_mrkt"),
+
     ("puregold","coco_pet"),
     ("coco_pet","puregold"),
     ("coco_pet","pc_ilgn"),
@@ -74,8 +76,12 @@ one_lanes = [
     ("uncle_brew","petron"),
 
     # ("petron","icnhs"),
-    ("orix","deja_teu"),
-    ("deja_teu","orix"),
+    ("orix","waynsee"),
+    ("waynsee","pondoc"),
+    ("pondoc","ziga_teck"),
+    ("ziga_teck","deja_teu"),
+
+
     ("meat_shop","sym"),
     ("meat_shop","min_burger"),
     ("min_burger","meat_shop"),
@@ -90,10 +96,17 @@ one_lanes = [
     ("doc_uy","pop_rock"),
     ("fire_safe", "pnb"),
     ("pnb","fire_safe"),
-    ("megatech","min_burger"),
-    ("min_burger","megatech"),
-    ("iligan_deal","phoenix_lpg"),
-    ("phoenix_lpg","iligan_deal"),
+    ("megatech","coco_pet"),
+    ("coco_pet","meat_shop"),
+    ("meat_shop","pugaan_term"),
+    ("pugaan_term","min_burger"),
+
+    
+    ("iligan_deal","comelec"),
+    ("comelec","megatech"),
+    ("comelec","megatech"),
+    ("megatech","phoenix_lpg"),
+
     ("mot_race","fount_acad"),
     ("fount_acad","mot_race"),
     ("shoppe_24","ortiz"),

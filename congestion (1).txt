@@ -35,13 +35,12 @@ Two-Lane Roads
     PNB to Daily (Two Way) x
     Emcor to Uncle Brew (Two Way) x 
     ICNHS to Petron (Two Way) x
-    Orix to Deja Teu (Two Way)
-    Mega tech to Min Burger (Two Way)
-    Palao Mrkt to Iligan Deal (Two Way)
-    Iligan Deal to phoenix_lpg (Two Way)
-    Learnfast to Gloflash (Two Way)
-    MC Hotel to Learnfast (Two Way)
-    Mot Race - Fount Acad (Two Way)
+    Orix to Deja Teu (Two Way) x
+    Mega tech to Min Burger (Two Way) x
+    Palao Mrkt to Iligan Deal (Two Way) x
+    Iligan Deal to phoenix_lpg (Two Way) x
+    MC Hotel to Learnfast (Two Way) x
+    Mot Race - Fount Acad (Two Way) 
     Shoppe 24 to Ortiz (Two Way)
     Sapp Ara to ICNHS (Two Way)
     coinsaver to phoenix gas (Two Way)
