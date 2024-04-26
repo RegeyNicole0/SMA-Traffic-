@@ -80,7 +80,7 @@ landmarks = {
     "ball_4k": [("dexter", 46), ("orix", 40)],
     "orix": [("waynsee", 46), ("crown", 47)],
     "crown": [("pop_rock", 46), ("mejia_bldg", 60), ("st_michaels", 37)],
-    "pop_rock": [("doc_uy", 58), ("mayo_dia", 45), ("crown", 46)],
+    "pop_rock": [("mayo_dia", 45), ("crown", 46)],
     "st_michaels": [("crown", 37), ("mshoes", 57), ("bpi", 47)],
     "bpi": [("st_michaels", 47), ("sec_bank", 88), ("ncip", 59), ("epson", 51)],
     "sec_bank": [("bpi", 88), ("ball_4k", 85), ("watsons", 40)],
