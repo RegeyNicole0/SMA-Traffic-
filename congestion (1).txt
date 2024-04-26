@@ -34,7 +34,7 @@ Two-Lane Roads
     Fire Safe to PNB (Two Way) x
     PNB to Daily (Two Way) x
     Emcor to Uncle Brew (Two Way) x 
-    ICNHS to Petron (Two Way) x
+    ICNHS to Sapp_Ara (Two Way) x
     Orix to Deja Teu (Two Way) x
     Mega tech to Min Burger (Two Way) x
     Palao Mrkt to Iligan Deal (Two Way) x
