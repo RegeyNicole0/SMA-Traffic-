@@ -37,7 +37,6 @@ one_lanes = [
     ("pc_ilgn","coco_pet"),
     ("pc_ilgn","bdo_network"),
     ("bdo_network","pc_ilgn"),
-    
     ("desmark","mackis"),
     ("mackis","tita_fan"),
     ("tita_fan","avila_learn"),
@@ -54,10 +53,11 @@ one_lanes = [
     ("dnp", "bike_ent"),
     ("pulis_agu", "pera_mpc"),
     ("pera_mpc", "learnfast"),
-
-    #("gaisano_old","pub_market"),
-    #("gaisano_old","ukay_market"),
-    ("nehal_arc","iligan_pier"),
+    ("nehal_arc","wet_market"),
+    ("wet_market","pub_market"),
+    ("gaisano_old","ukay_market"),
+    ("iligan_pier","coast_guard"),
+    ("coast_guard","nehal_arc"),
     ("pnb","daily"),
     ("daily","pnb"),
 
@@ -83,7 +83,8 @@ one_lanes = [
 
     ("meat_shop","min_burger"),
     ("min_burger","meat_shop"),
-    
+    ("palao_mrkt","chandis"),
+    ("chandis","mottrad_villa"),
     ("palao_mrkt","iligan_deal"),
     ("iligan_deal","palao_mrkt"),
     ("learnfast","glo_flash"),
@@ -127,9 +128,10 @@ one_lanes = [
     ("epson","post_off"),
     ("uncle_brew","emcor"),
     ("emcor","uncle_brew"),
-
-    ("coast_wat","cq_print")
-
+    ("new_flash","coast_wat"),
+    ("coast_wat","new_flash"),
+    ("coast_wat","cq_print"),
+    ("cq_print","coast_wat"),
 ]
 
 two_lanes = [
@@ -237,10 +239,8 @@ two_lanes = [
     ("coast_wat","ziga_teck"),
     ("ziga_teck","sapp_ara"),
     ("sapp_ara","tomntoms"),
-
-
-    ("zoey","red_carp"),
-    ("red_carp","gsis")
+    ("zoey","ilaya"),
+    ("ilaya","gsis")
 ]
 
 three_lanes = [
@@ -272,6 +272,7 @@ three_lanes = [
 ]
 
 four_lanes = [
+    ("gaisano_old","nehal_arc"),
     ("mejia_bldg","coinsaver"),
     ("coinsaver","chandis"),
     ("chandis","meat_shop")
