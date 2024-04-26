@@ -204,7 +204,7 @@ two_lanes = [
     ("coast_wat","ziga_teck"),
     ("ziga_teck","sapp_ara"),
     ("sapp_ara","tomntoms"),
-    ("zoey","ilaya")
+    ("zoey","ilaya"),
     ("ilaya","gsis")
 ]
 
