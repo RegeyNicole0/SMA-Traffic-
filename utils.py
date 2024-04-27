@@ -132,8 +132,6 @@ def get_acceptable_congestion_rate(counts):
             total += 1
             if count/30 <= get_acceptable_congestion(outer, inner):
                 acceptable +=1
-            # else:
-            #     print(f"Congestion at ({outer},{inner}) : {count/30} ")
     
     return [acceptable/total, total, acceptable]
 
@@ -157,4 +155,26 @@ def get_average_congestion_diff(prev, curr):
             else:
                 improvements.append(0)
 
-    return np.mean(improvements)            
+    return np.mean(improvements)
+
+def get_num_nodes(path):
+    return len(path)
+
+def get_edge_distance(src, dest, path):
+    path_taken = "->".join(path)
+    distance = 0
+    for neighbor in landmarks[src]:
+        if neighbor[0] == dest:
+            distance = neighbor[1]
+    if distance > 0:
+        return distance
+    print(f"Missing connection: {src} -> {dest}")
+    print(f"Path Taken {path_taken}")
+    raise Exception("Missing Link")
+
+def get_path_distance(path):
+    total_distance = 0
+    for i in range(len(path) - 1):
+        total_distance += get_edge_distance(path[i], path[i+1], path)
+
+    return total_distance

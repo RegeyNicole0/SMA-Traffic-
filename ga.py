@@ -36,6 +36,8 @@ class Route:
         if not self.paths:
             self.initialize_paths()
         return random.randint(0, len(self.paths)-1)
+    
+    
 
 class Solution:
     # A route is a jeep    
@@ -60,14 +62,14 @@ class Solution:
         routes = self.get_path_choices()
         overall_weight = 0
         for route in routes:
-            overall_weight += route[1]['total_weight']
+            overall_weight += utils.get_path_distance(route[1]['path'])
         return overall_weight
 
     def get_overall_weight_ave(self):
         routes = self.get_path_choices()
         path_lengths = []
         for route in routes:
-            path_lengths.append(route[1]['total_weight'])
+            path_lengths.append(utils.get_path_distance(route[1]['path']))
         
         return np.mean(path_lengths)
 
@@ -296,11 +298,14 @@ if __name__ == "__main__":
         for path in best_path_choices:
             route = path[0]
             path_taken = path[1]['path']
+            path_distance = utils.get_path_distance(path_taken)
+            num_nodes = utils.get_num_nodes(path_taken)
             f.write("-"*50)
-            f.write(f"\nRoute {route} | Nodes Visited {path[1]['num_visited']} | Distance {path[1]['total_weight']}\n")
+            f.write(f"\nRoute {route} | Nodes Visited {num_nodes} | Distance {path_distance}\n")
             f.write("->".join(path_taken))
             f.write("\n")
             f.write("-"*50)
+            
 
 
     print("results saved to results.txt")
