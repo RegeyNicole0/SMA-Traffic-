@@ -80,7 +80,7 @@ class Solution:
 
         for path in routes:
             # path = route[1]['path']
-            for i in range(len(path) - 1):
+            for i in range(len(path[1]) - 1):
                 counts[path[1][i]][path[1][i+1]] += 1
         
         return counts
@@ -89,12 +89,15 @@ class Solution:
         routes = self.get_path_choices()
         nodes = 0
         min = 10000
+        max = 0
         for path in routes:
             nodes += len(path[1])
-            if len(path) < min:
-                min = len(path)
+            if len(path[1]) < min:
+                min = len(path[1])
+            if len(path[1]) > max:
+                max = len(path[1])
         
-        return (nodes, nodes/len(routes), min)
+        return (nodes, nodes/len(routes), min, max)
 
 
     def get_fitness(self):
@@ -107,21 +110,23 @@ class Solution:
         avg_congestion = utils.get_average_congestion_normalized(new_counts)
         acceptable_congestion_rate = utils.get_acceptable_congestion_rate(new_counts)
         all_acceptable_congestion = int(utils.check_all_acceptable_congestion(new_counts))
-        total_nodes, avg_nodes, min = self.get_num_nodes_visited()
+        total_nodes, avg_nodes, min, max = self.get_num_nodes_visited()
+        num_nodes_range = max - min
         
 
         normalized_scores = (15 - new_overall_weights/100000) \
                             + 15 * (1 - new_overall_weights_avg/10000) \
                             + 20 * (total_nodes/1000) \
                             + 20 * (avg_nodes/1000) \
-                            + 20 * (1 - min/1000) \
+                            + 20 * (1 - num_nodes_range/1000) \
+                            + 20 * (min/1000) \
                             + 20 * (1- (avg_congestion_diff/30)) \
                             + 20 * (1 - (max_congestion[0] / 10))  \
                             + 20 * (1 - (avg_congestion / 10)) \
                             + 100 * acceptable_congestion_rate[0] \
                             # + 300 * all_acceptable_congestion
 
-        normalized_scores = normalized_scores / 250
+        normalized_scores = normalized_scores / 270
         return normalized_scores
 
 class Population:    

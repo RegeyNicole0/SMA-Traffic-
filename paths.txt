@@ -1,91 +1,91 @@
 --------------------------------------------------
-Route tambo-hinaplanon | Nodes Visited 57 | Distance 3943
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->mc_hotel->pater->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->qa_plaza->citi_alley->coast_wat->cq_print->deja_teu->ziga_teck->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
+Route tambo-hinaplanon | Nodes Visited 58 | Distance 4531
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->mc_hotel->pater->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->qa_plaza->citi_alley->coast_wat->ziga_teck->sapp_ara->mayo_dia->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route hinaplanon-cabaro | Nodes Visited 57 | Distance 4300
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->mc_hotel->pater->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->qa_plaza->citi_alley->coast_wat->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
+Route hinaplanon-cabaro | Nodes Visited 47 | Distance 3361
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->mc_hotel->pater->glo_flash->red_carp->ilaya->ortiz->dexter->new_flash->coast_wat->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route canaway | Nodes Visited 58 | Distance 4565
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->mc_hotel->pater->glo_flash->red_carp->ilaya->ortiz->qa_plaza->citi_alley->coast_wat->cq_print->deja_teu->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
+Route canaway | Nodes Visited 64 | Distance 4799
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->qa_plaza->citi_alley->coast_wat->ziga_teck->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route bayug-santiago | Nodes Visited 60 | Distance 4552
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->glo_flash->red_carp->ilaya->ortiz->dexter->new_flash->coast_wat->cq_print->deja_teu->ziga_teck->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
+Route bayug-santiago | Nodes Visited 57 | Distance 4499
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route luinab_bahayan | Nodes Visited 56 | Distance 4412
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->qa_plaza->citi_alley->coast_wat->cq_print->deja_teu->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->mottrad_villa->ncip->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
+Route luinab_bahayan | Nodes Visited 47 | Distance 3841
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->coast_wat->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->mottrad_villa->ncip->bpi->sec_bank->watsons->unitop->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route bagong_silang | Nodes Visited 57 | Distance 4462
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->mc_hotel->pater->glo_flash->red_carp->ilaya->ortiz->dexter->new_flash->coast_wat->cq_print->deja_teu->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
+Route bagong_silang | Nodes Visited 61 | Distance 4636
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->qa_plaza->citi_alley->coast_wat->cq_print->deja_teu->ziga_teck->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route sta_fe | Nodes Visited 54 | Distance 3812
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->qa_plaza->citi_alley->coast_wat->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
+Route sta_fe | Nodes Visited 62 | Distance 4733
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->mc_hotel->pater->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->coast_wat->cq_print->deja_teu->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route dalipuga | Nodes Visited 56 | Distance 4352
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->mc_hotel->pater->glo_flash->red_carp->ilaya->ortiz->qa_plaza->citi_alley->coast_wat->cq_print->deja_teu->ziga_teck->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
+Route dalipuga | Nodes Visited 51 | Distance 4111
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route kalubihon | Nodes Visited 43 | Distance 3625
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->qa_plaza->citi_alley->coast_wat->cq_print->deja_teu->ziga_teck->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->mottrad_villa->ncip->post_off->desmark->emcor->gaisano_mall
+Route kalubihon | Nodes Visited 55 | Distance 3823
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->dexter->new_flash->qa_plaza->citi_alley->coast_wat->ziga_teck->pondoc->waynsee->orix->crown->mejia_bldg->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route san_lambaguhon | Nodes Visited 58 | Distance 4428
-vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->glo_flash->tambacan->fount_acad->red_carp->ilaya->ortiz->qa_plaza->citi_alley->coast_wat->ziga_teck->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall
+Route san_lambaguhon | Nodes Visited 53 | Distance 3732
+vanitea->petron->coop_fuel->daily->tc_circle->iligan_pier->coast_guard->nehal_arc->wet_market->pub_market->ukay_market->dunkin->bike_ent->pulis_agu->pera_mpc->learnfast->glo_flash->red_carp->ilaya->ortiz->dexter->new_flash->qa_plaza->citi_alley->coast_wat->cq_print->deja_teu->ziga_teck->pondoc->waynsee->orix->crown->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->gaisano_mall
 ----------------------------------------------------------------------------------------------------
-Route tambacan | Nodes Visited 26 | Distance 1647
-tambacan->glo_flash->learnfast->mc_hotel->pater->penshoppe->pnb->fire_safe->daily->coop_fuel->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->bpi->st_michaels->crown->pop_rock->mayo_dia->sapp_ara->icnhs->des_wing
+Route tambacan | Nodes Visited 24 | Distance 1275
+tambacan->glo_flash->learnfast->mc_hotel->pater->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->bpi->st_michaels->crown->pop_rock->mayo_dia->sapp_ara->icnhs->des_wing
 ----------------------------------------------------------------------------------------------------
 Route tubod_rosario | Nodes Visited 20 | Distance 879
 des_wing->icnhs->sapp_ara->mayo_dia->pondoc->new_flash->qa_plaza->gsis->fount_acad->red_carp->ilaya->ortiz->dexter->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->tomntoms
 ----------------------------------------------------------------------------------------------------
-Route tubod_carbide | Nodes Visited 20 | Distance 879
-des_wing->icnhs->sapp_ara->mayo_dia->pondoc->new_flash->qa_plaza->gsis->fount_acad->red_carp->ilaya->ortiz->dexter->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->tomntoms
-----------------------------------------------------------------------------------------------------
-Route tubod_orellana | Nodes Visited 6 | Distance 298
-des_wing->icnhs->sapp_ara->mayo_dia->lanastida->tomntoms
-----------------------------------------------------------------------------------------------------
-Route baraas | Nodes Visited 4 | Distance 175
+Route tubod_carbide | Nodes Visited 4 | Distance 175
 des_wing->icnhs->sapp_ara->tomntoms
 ----------------------------------------------------------------------------------------------------
-Route ubaldo | Nodes Visited 25 | Distance 1517
-des_wing->icnhs->sapp_ara->mayo_dia->pondoc->new_flash->qa_plaza->gsis->fount_acad->red_carp->ilaya->ortiz->dexter->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->meat_shop->coco_pet->megatech->phoenix_lpg->pc_ilgn->bdo_network
-----------------------------------------------------------------------------------------------------
-Route olas | Nodes Visited 23 | Distance 1714
-bdo_network->sym->e_fix->landbank->min_burger->pugaan_term->meat_shop->coco_pet->megatech->comelec->iligan_deal->palao_mrkt->chandis->mottrad_villa->ncip->mshoes->mejia_bldg->doc_uy->lanastida->mayo_dia->sapp_ara->icnhs->des_wing
-----------------------------------------------------------------------------------------------------
-Route tipanoy_landless | Nodes Visited 4 | Distance 175
+Route tubod_orellana | Nodes Visited 4 | Distance 175
 des_wing->icnhs->sapp_ara->tomntoms
 ----------------------------------------------------------------------------------------------------
-Route abuno | Nodes Visited 6 | Distance 298
-des_wing->icnhs->sapp_ara->mayo_dia->lanastida->tomntoms
-----------------------------------------------------------------------------------------------------
-Route tipanoy-pina | Nodes Visited 2 | Distance 59
+Route baraas | Nodes Visited 2 | Distance 59
 des_wing->tomntoms
 ----------------------------------------------------------------------------------------------------
-Route tipanoy_mibala | Nodes Visited 20 | Distance 879
+Route ubaldo | Nodes Visited 17 | Distance 1223
+des_wing->icnhs->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->meat_shop->coco_pet->megatech->phoenix_lpg->pc_ilgn->bdo_network
+----------------------------------------------------------------------------------------------------
+Route olas | Nodes Visited 27 | Distance 1880
+bdo_network->sym->e_fix->landbank->min_burger->pugaan_term->meat_shop->coco_pet->megatech->comelec->iligan_deal->palao_mrkt->chandis->mottrad_villa->ncip->mshoes->mejia_bldg->doc_uy->lanastida->mayo_dia->pondoc->new_flash->coast_wat->ziga_teck->sapp_ara->icnhs->des_wing
+----------------------------------------------------------------------------------------------------
+Route tipanoy_landless | Nodes Visited 20 | Distance 879
 des_wing->icnhs->sapp_ara->mayo_dia->pondoc->new_flash->qa_plaza->gsis->fount_acad->red_carp->ilaya->ortiz->dexter->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->tomntoms
 ----------------------------------------------------------------------------------------------------
-Route steeltown | Nodes Visited 20 | Distance 879
-des_wing->icnhs->sapp_ara->mayo_dia->pondoc->new_flash->qa_plaza->gsis->fount_acad->red_carp->ilaya->ortiz->dexter->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->tomntoms
+Route abuno | Nodes Visited 12 | Distance 585
+des_wing->icnhs->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->tomntoms
 ----------------------------------------------------------------------------------------------------
-Route sua_iishai | Nodes Visited 20 | Distance 879
-des_wing->icnhs->sapp_ara->mayo_dia->pondoc->new_flash->qa_plaza->gsis->fount_acad->red_carp->ilaya->ortiz->dexter->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->tomntoms
-----------------------------------------------------------------------------------------------------
-Route tominobo | Nodes Visited 6 | Distance 298
+Route tipanoy-pina | Nodes Visited 6 | Distance 298
 des_wing->icnhs->sapp_ara->mayo_dia->lanastida->tomntoms
 ----------------------------------------------------------------------------------------------------
-Route buruun | Nodes Visited 20 | Distance 879
-des_wing->icnhs->sapp_ara->mayo_dia->pondoc->new_flash->qa_plaza->gsis->fount_acad->red_carp->ilaya->ortiz->dexter->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->tomntoms
-----------------------------------------------------------------------------------------------------
-Route tinago_maze | Nodes Visited 2 | Distance 59
+Route tipanoy_mibala | Nodes Visited 2 | Distance 59
 des_wing->tomntoms
+----------------------------------------------------------------------------------------------------
+Route steeltown | Nodes Visited 2 | Distance 59
+des_wing->tomntoms
+----------------------------------------------------------------------------------------------------
+Route sua_iishai | Nodes Visited 2 | Distance 59
+des_wing->tomntoms
+----------------------------------------------------------------------------------------------------
+Route tominobo | Nodes Visited 2 | Distance 59
+des_wing->tomntoms
+----------------------------------------------------------------------------------------------------
+Route buruun | Nodes Visited 2 | Distance 59
+des_wing->tomntoms
+----------------------------------------------------------------------------------------------------
+Route tinago_maze | Nodes Visited 6 | Distance 298
+des_wing->icnhs->sapp_ara->mayo_dia->lanastida->tomntoms
 ----------------------------------------------------------------------------------------------------
 Route tinago_ditu | Nodes Visited 20 | Distance 879
 des_wing->icnhs->sapp_ara->mayo_dia->pondoc->new_flash->qa_plaza->gsis->fount_acad->red_carp->ilaya->ortiz->dexter->waynsee->orix->crown->mejia_bldg->doc_uy->lanastida->tomntoms
 ----------------------------------------------------------------------------------------------------
-Route bayanihan | Nodes Visited 36 | Distance 2851
-des_wing->icnhs->sapp_ara->mayo_dia->pondoc->waynsee->orix->crown->mejia_bldg->coinsaver->chandis->mottrad_villa->ncip->mshoes->st_michaels->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->daily->coop_fuel->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->desmark->emcor->gaisano_mall->vanitea
+Route bayanihan | Nodes Visited 32 | Distance 2559
+des_wing->icnhs->sapp_ara->mayo_dia->lanastida->phoenix_gas->coinsaver->chandis->mottrad_villa->ncip->bpi->sec_bank->watsons->unitop->galaxy_mart->penshoppe->pnb->fire_safe->octagon->abest->techtalk->frapella->avila_learn->tita_fan->mackis->epson->post_off->desmark->emcor->uncle_brew->petron->vanitea
 ----------------------------------------------------------------------------------------------------
-Route palao_del | Nodes Visited 9 | Distance 597
-landbank->min_burger->pugaan_term->meat_shop->coco_pet->pc_ilgn->bdo_network->sym->e_fix
+Route palao_del | Nodes Visited 11 | Distance 759
+landbank->min_burger->pugaan_term->meat_shop->coco_pet->megatech->phoenix_lpg->pc_ilgn->bdo_network->sym->e_fix
 ----------------------------------------------------------------------------------------------------
-Route del_abegail | Nodes Visited 9 | Distance 597
-landbank->min_burger->pugaan_term->meat_shop->coco_pet->pc_ilgn->bdo_network->sym->e_fix
+Route del_abegail | Nodes Visited 11 | Distance 759
+landbank->min_burger->pugaan_term->meat_shop->coco_pet->megatech->phoenix_lpg->pc_ilgn->bdo_network->sym->e_fix
 --------------------------------------------------
