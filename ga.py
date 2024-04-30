@@ -5,8 +5,8 @@ import random
 from collections import defaultdict
 import numpy as np
 from tabulate import tabulate
-
-graph = landmarks
+from routes import iligan_graph
+graph = iligan_graph
 
 class Route:
 
@@ -62,14 +62,14 @@ class Solution:
         routes = self.get_path_choices()
         overall_weight = 0
         for route in routes:
-            overall_weight += utils.get_path_distance(route[1]['path'])
+            overall_weight += utils.get_path_distance(route[1])
         return overall_weight
 
     def get_overall_weight_ave(self):
         routes = self.get_path_choices()
         path_lengths = []
         for route in routes:
-            path_lengths.append(utils.get_path_distance(route[1]['path']))
+            path_lengths.append(utils.get_path_distance(route[1]))
         
         return np.mean(path_lengths)
 
@@ -78,12 +78,23 @@ class Solution:
         routes = self.get_path_choices()
         counts = defaultdict(lambda: defaultdict(int))
 
-        for route in routes:
-            path = route[1]['path']
+        for path in routes:
+            # path = route[1]['path']
             for i in range(len(path) - 1):
-                counts[path[i]][path[i+1]] += 1
+                counts[path[1][i]][path[1][i+1]] += 1
         
         return counts
+    
+    def get_num_nodes_visited(self):
+        routes = self.get_path_choices()
+        nodes = 0
+        min = 10000
+        for path in routes:
+            nodes += len(path[1])
+            if len(path) < min:
+                min = len(path)
+        
+        return (nodes, nodes/len(routes), min)
 
 
     def get_fitness(self):
@@ -96,18 +107,21 @@ class Solution:
         avg_congestion = utils.get_average_congestion_normalized(new_counts)
         acceptable_congestion_rate = utils.get_acceptable_congestion_rate(new_counts)
         all_acceptable_congestion = int(utils.check_all_acceptable_congestion(new_counts))
+        total_nodes, avg_nodes, min = self.get_num_nodes_visited()
         
 
-        normalized_scores = (1 - new_overall_weights/100000) \
-                            + 3 * (1 - new_overall_weights_avg/10000) \
-                            + 4 * (1- (avg_congestion_diff/30)) \
-                            + 4 * (1 - (max_congestion[0] / 10))  \
-                            + 4 * (1 - (avg_congestion / 10)) \
-                            + 20 * acceptable_congestion_rate[0] \
-                            + 36 * all_acceptable_congestion
+        normalized_scores = (15 - new_overall_weights/100000) \
+                            + 15 * (1 - new_overall_weights_avg/10000) \
+                            + 20 * (total_nodes/1000) \
+                            + 20 * (avg_nodes/1000) \
+                            + 20 * (1 - min/1000) \
+                            + 20 * (1- (avg_congestion_diff/30)) \
+                            + 20 * (1 - (max_congestion[0] / 10))  \
+                            + 20 * (1 - (avg_congestion / 10)) \
+                            + 100 * acceptable_congestion_rate[0] \
+                            # + 300 * all_acceptable_congestion
 
-        
-        normalized_scores = normalized_scores / 72
+        normalized_scores = normalized_scores / 250
         return normalized_scores
 
 class Population:    
@@ -141,7 +155,7 @@ class Population:
 class GeneticAlgorithm:
     def __init__(self, routes, graph, current_counts, current_overall_weight_avg,
                 current_overall_weights, population_size=1200, crossover_rate=0.9, 
-                mutation_rate=0.1, elitism_param=10):
+                mutation_rate=0.1, elitism_param=10, generations=100):
         self.population_size = population_size
         self.crossover_rate = crossover_rate
         self.mutation_rate = mutation_rate
@@ -151,6 +165,7 @@ class GeneticAlgorithm:
         self.current_counts = current_counts
         self.current_overall_weight_avg = current_overall_weight_avg
         self.current_overall_weights = current_overall_weights
+        self.generations = generations
 
     def run(self):
         pop = Population(self.population_size,
@@ -161,7 +176,7 @@ class GeneticAlgorithm:
                         current_overall_weight_avg=self.current_overall_weight_avg)
         generation_counter = 0
 
-        while generation_counter < 10: #Puwede Patas-an
+        while generation_counter < self.generations: #Puwede Patas-an
             generation_counter += 1
             current_best = max(pop.sols, key=lambda p: p.get_fitness())
 
@@ -256,7 +271,8 @@ if __name__ == "__main__":
         population_size=100,
         crossover_rate=0.4,
         mutation_rate=1,
-        elitism_param=30
+        elitism_param=30,
+        generations=10
     )
 
     best = algorithm.run()
@@ -297,7 +313,7 @@ if __name__ == "__main__":
     with open("paths.txt", "w") as f:
         for path in best_path_choices:
             route = path[0]
-            path_taken = path[1]['path']
+            path_taken = path[1]
             path_distance = utils.get_path_distance(path_taken)
             num_nodes = utils.get_num_nodes(path_taken)
             f.write("-"*50)

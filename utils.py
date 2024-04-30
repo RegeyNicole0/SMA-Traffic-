@@ -58,9 +58,46 @@ def dfs_all_paths(graph, current_node, end_node, waypoints, path, paths, num_vis
 
 # Function to find all paths with waypoints for a given route
 def find_paths_for_route(graph, start_node, end_node, waypoints, max_length=34):
-    paths = []
-    dfs_all_paths(graph, start_node, end_node, waypoints, [], paths, num_visited=0, total_weight=0, max_length=max_length, memo={})
+    # paths = []
+    # dfs_all_paths(graph, start_node, end_node, waypoints, [], paths, num_visited=0, total_weight=0, max_length=max_length, memo={})
+    paths = dfs_memoized(graph, start_node, end_node)
     return paths
+
+def dfs_memoized(graph, start, end, visited=None, memo=None):
+    if visited is None:
+        visited = set()
+    if memo is None:
+        memo = {}
+
+    # Check if the result is memoized
+    if (start, end) in memo:
+        return memo[(start, end)]
+
+    # Base case: if start equals end, return the path containing only start
+    if start == end:
+        return [[start]]
+
+    # Initialize list to store all paths
+    all_paths = []
+
+    # Mark the current node as visited
+    visited.add(start)
+
+    # Iterate over neighbors of the current node
+    for neighbor in graph.neighbors(start):
+        # Check for cycles
+        if neighbor not in visited:
+            # Recursively find paths from neighbor to end
+            paths_from_neighbor = dfs_memoized(graph, neighbor, end, visited.copy(), memo)
+
+            # Append start to each path found
+            for path in paths_from_neighbor:
+                all_paths.append([start] + path)
+
+    # Memoize the result
+    memo[(start, end)] = all_paths
+
+    return all_paths
 
 def get_current_overall_route_weight():
     overall_weight = 0
