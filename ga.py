@@ -31,6 +31,16 @@ class Route:
     def initialize_paths(self):
         if not self.paths:
             self.paths = self.get_all_paths()
+            lens = [len(path) for path in self.paths]
+            max_len = max(lens)
+            temp = [path for path in self.paths if len(path) >= 20]
+            if len(temp) == 0:
+                print(self.name, "has no paths with more than 20 nodes maximum is", max(lens))
+
+            if max_len < 20:
+                temp = [path for path in self.paths if len(path) >= max_len]
+            
+            self.paths = [path for path in temp if len(path) <= 30]
 
     def choose_random_path(self):
         if not self.paths:
@@ -114,8 +124,8 @@ class Solution:
         num_nodes_range = max - min
         
 
-        normalized_scores = (15 - new_overall_weights/100000) \
-                            + 15 * (1 - new_overall_weights_avg/10000) \
+        normalized_scores = (25 - new_overall_weights/100000) \
+                            + 25 * (1 - new_overall_weights_avg/10000) \
                             + 20 * (total_nodes/1000) \
                             + 20 * (avg_nodes/1000) \
                             + 20 * (1 - num_nodes_range/1000) \
@@ -123,10 +133,10 @@ class Solution:
                             + 20 * (1- (avg_congestion_diff/30)) \
                             + 20 * (1 - (max_congestion[0] / 10))  \
                             + 20 * (1 - (avg_congestion / 10)) \
-                            + 100 * acceptable_congestion_rate[0] \
-                            # + 300 * all_acceptable_congestion
+                            + 250 * acceptable_congestion_rate[0] \
+                            + 250 * all_acceptable_congestion
 
-        normalized_scores = normalized_scores / 270
+        normalized_scores = normalized_scores / 690
         return normalized_scores
 
 class Population:    
@@ -274,8 +284,8 @@ if __name__ == "__main__":
         current_overall_weight_avg=current_overall_weight_avg,
         current_overall_weights=current_overall_weights,
         population_size=100,
-        crossover_rate=0.4,
-        mutation_rate=1,
+        crossover_rate=0.8,
+        mutation_rate=0.4,
         elitism_param=30,
         generations=10
     )
