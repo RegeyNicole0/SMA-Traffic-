@@ -1,6 +1,8 @@
 #akong pag assign sa distance is from starting point(0) + d from sp to one node
 # gibase nako ang distance from the node system
 
+import networkx as nx
+from nodes import landmarks
 #ILIGAN JEEPNEY ROUTES
 
 routes = {
@@ -292,3 +294,13 @@ start_end = {
 # Del Carmen-Abegail
     "del_abegail": ["landbank", "e_fix"],
 }
+# Define the graph
+iligan_graph = nx.MultiDiGraph()
+
+# Add edges from landmarks data to the graph
+for landmark, destinations in landmarks.items():
+    for destination, distance in destinations:
+        iligan_graph.add_edge(landmark, destination, weight=distance)
+
+
+

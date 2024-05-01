@@ -1,0 +1,69 @@
+TOTAL ROUTES: 30
+CURRENT CONGESTION LEVELS FOR EACH LANES:
+    4-Lanes : 11 (36%)
+    3-Lanes : 11 (36%)
+    2-Lanes : 17 (56%)
+    1-Lane  : 16 (53%)
+
+PROPOSED CONGESTION LEVELS FOR EACH LANES:
+    4-Lanes : 18 (60%)
+    3-Lanes : 17 (56%)
+    2-Lanes : 17 (56%)
+    1-Lane  : 11 (36%)
+
+Four to Six Lane Roads (Two Way)
+    Gaisano Mall to NCIP (6-lanes) x
+    TC- Circle to Gaisano Old (6-lanes)x
+    Co-op Fuel to TC-Circle (4-lanes)x
+    NCIP to ICNHS (4-lanes) x
+    TC Circle to Iligan Pier (4-lanes)x
+    Landbank to Gaisano Old (4-lanes)x
+    Petron to Sapp Ara (4-lanes)x
+
+Four to Six Lane Roads (One Way)
+    Mejia Bldg to Meat Shop (4-lanes)x
+
+Three-Lane Roads 
+    Petron to Co-op Fuel (3-lanes)x
+    Pub Market to Mejia Bldg (One Way)x
+  
+Two-Lane Roads
+    Co-Op Fuel to Tambacan (Two Way)x
+    Tambacan to BDO Network (Two Way)x
+    Desmark to Fire Safe (Two Way) x
+    Fire Safe to PNB (Two Way) x
+    PNB to Daily (Two Way) x
+    Emcor to Uncle Brew (Two Way) x 
+    ICNHS to Sapp_Ara (Two Way) x
+    Orix to Deja Teu (Two Way) x
+    Mega tech to Min Burger (Two Way) x
+    Palao Mrkt to Iligan Deal (Two Way) x
+    Iligan Deal to phoenix_lpg (Two Way) x
+    MC Hotel to Learnfast (Two Way) x
+    Mot Race - Fount Acad (Two Way) x
+    Shoppe 24 to Ortiz (Two Way) x
+    Sapp Ara to ICNHS (Two Way) x 
+    coinsaver to phoenix gas (Two Way) x
+    Puregold to Comelec (Two Way) x 
+    PC_Ilgn to Phoenix LPG (Two Way) x 
+    BDO Network to Landbank (Two Way) x
+    Post Off to Epson (Two Way) x
+    Uncle Brew to Emcor (Two Way) x 
+    --Orix to Deja Teu (One Way)
+    Ball 4k to CQ Print (One Way) x
+    Ortiz to Citi Alley (One Way) -- one way but from citi_alley to ortiz siya na direction
+    Citi Alley to TomnToms (One Way) x
+    Gaisano Old to Pub Market (One Way) x
+    Gaisano Old to Ukay Market (One Way) x
+    Nehal Arc to Iligan Pier (One Way) -- one way is from iliganpier to nehal_arc direction
+    Meat Shop to SYM (One Way)  x 
+    Gloflash to Pop Rock (One Way) x
+    Dr. Uy to Pop Rock (One Way) -- one way but the direction should be from pop_rock to doc_uy
+    Zoey to GSIS (One Way) x
+    Palao Mrkt to MotTrad Villa (One Way)
+   
+Single-Lane Roads
+    Halal Meat to Dunkin 
+    DNP to Bike Ent
+    Pulis Agu to Pera MPC
+    Pera MPC to Learnfast

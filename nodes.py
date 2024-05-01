@@ -16,20 +16,14 @@ landmarks = {
     "vanitea": [("petron", 243), ("gaisano_mall", 190)],
     "petron": [("coop_fuel", 140), ("uncle_brew", 170), ("vanitea", 243)],
     "coop_fuel": [("daily", 190), ("octagon", 160 ), ("petron", 140)],
-    # "octagon": [("coop_fuel", 160)], one way
     "octagon": [("coop_fuel", 160), ("penshoppe", 91), ("fire_safe", 95), ("abest", 50)], 
-    # "abest": [("octagon", 50)], one way
     "abest": [("octagon", 50), ("techtalk", 56)],
-    # "techtalk": [("abest", 56)], one way
     "techtalk": [("abest", 56), ("frapella", 32)],
-    # "IS_Rep": ["fire_safe", "octagon"],
-    # "fire_safe": [("daily", 117), ("rcbc", 45), ("pnb", 87)], one way
     "fire_safe": [("daily", 117), ("pnb", 89), ("octagon", 95)],
     "daily": [("tc_circle", 261), ("coop_fuel", 190), ("fire_safe",117)],
     "tc_circle": [("iligan_pier", 113), ("daily", 261), ("gaisano_old", 193)],
     "iligan_pier":[("tc_circle", 113), ("coast_guard", 110)],
     "coast_guard": [("nehal_arc", 141)],
-    # "Ludo": ["tc_circle", "gaisano_old"],
     "nehal_arc": [("wet_market", 37), ("gaisano_old", 50)],
     "gaisano_old": [("nehal_arc", 50), ("ukay_market", 105), ("halal_meat", 114)],
     "wet_market": [("pub_market", 112)],
@@ -37,10 +31,6 @@ landmarks = {
     "ukay_market": [("dunkin", 113)],
     "halal_meat": [("gaisano_old", 144), ("dunkin", 97), ("dnp", 99)],
     "dnp": [("halal_meat", 99), ("pnb", 45), ("bike_ent", 88)],
-    #"rcbc": [("dnp", 45), ("fire_safe", 89), ("penshoppe", 103)],
-    # "agr_pharm": ["novo", "ukay_market", "dunkin"],
-    # "novo": ["halal_meat", "gaisano_old", "agr_pharm"],
-    # "Rojon": ["RCBC_PNB", "Penshoppe"], 
     "dunkin": [("bike_ent", 96)],
     "bike_ent": [("pulis_agu", 39)],
     "pulis_agu": [("pera_mpc", 40),("mc_hotel", 63)],
@@ -48,7 +38,7 @@ landmarks = {
     "pater": [("glo_flash", 47), ("penshoppe", 85), ("mot_race", 46)],
     "penshoppe": [("pnb", 103), ("galaxy_mart", 46), ("pater", 85), ("octagon", 91)],
     "galaxy_mart": [("penshoppe", 46), ("unitop", 46)],   
-    "learnfast": [("glo_flash", 46), ("tambacan", 78)],
+    "learnfast": [("mc_hotel", 47),("glo_flash", 46), ("tambacan", 78)],
     "glo_flash": [("learnfast", 46), ("tambacan", 43), ("red_carp", 48), ("pater", 47)],
     "red_carp": [("ilaya", 36), ("fount_acad", 44), ("mot_race", 47)],
     "ilaya": [("ortiz", 36), ("gsis", 40)],
@@ -80,22 +70,17 @@ landmarks = {
     "ball_4k": [("dexter", 46), ("orix", 40)],
     "orix": [("waynsee", 46), ("crown", 47)],
     "crown": [("pop_rock", 46), ("mejia_bldg", 60), ("st_michaels", 37)],
-    "pop_rock": [("doc_uy", 58), ("mayo_dia", 45), ("crown", 46)],
+    "pop_rock": [("mayo_dia", 45), ("crown", 46)],
     "st_michaels": [("crown", 37), ("mshoes", 57), ("bpi", 47)],
     "bpi": [("st_michaels", 47), ("sec_bank", 88), ("ncip", 59), ("epson", 51)],
     "sec_bank": [("bpi", 88), ("ball_4k", 85), ("watsons", 40)],
     "watsons": [("sec_bank", 40), ("unitop", 33), ("shoppe_24", 85)],
     "epson": [("bpi", 51), ("mackis", 50), ("post_off", 58)],
-    # "mackis": [("tita_fan", 40), ("epson", 50), ("uncle_brew", 50)], one way
     "mackis": [("tita_fan", 40), ("epson", 50), ("uncle_brew", 50), ("desmark", 60)],
     "uncle_brew": [("mackis", 50), ("emcor", 61), ("petron", 170)],
-    # "tita_fan": [("avila_learn", 45)],
     "tita_fan": [("mackis", 40), ("avila_learn", 45)],
-    # "avila_learn": [("sec_bank", 94), ("frapella", 40)], one way
     "avila_learn": [("tita_fan", 45),("sec_bank", 94), ("frapella", 40)],
-    # "frapella": [("techtalk", 32)], one way
     "frapella": [("avila_learn", 40), ("techtalk", 32)],
-    # "cathedral": [("sec_bank", ), ("avila_learn", )],
     
     # National Road (ICNHS to GMALL)
     "des_wing": [("icnhs", 58), ("tomntoms", 59)],
@@ -111,9 +96,6 @@ landmarks = {
     "gaisano_mall": [("emcor", 124), ("vanitea", 192)],
 
     # Palao Market
-    # "pbb": ["ncip", "kylas"],
-    # "kylas": ["pbb", "Alemania"],
-    # "Alemania": ["kylas", "mottrad_villa", "Bam_Doc"],
     "chandis": [("mottrad_villa", 94), ("meat_shop", 121)],
     "mottrad_villa": [("ncip", 292), ("min_burger", 94)],
     "min_burger": [("pugaan_term", 45), ("landbank", 116), ("mottrad_villa", 94)],
@@ -133,7 +115,6 @@ landmarks = {
     "e_fix": [("landbank", 50)],
     "pugaan_term": [("min_burger", 45), ("e_fix", 114), ("meat_shop", 50)],
     "landbank": [("min_burger", 116), ("e_fix", 50)],
-    # "colorchart": ["landbank", "sym"]
 }
 
 # Four to Six Lane Roads (Two Way)

@@ -5,8 +5,8 @@ import random
 from collections import defaultdict
 import numpy as np
 from tabulate import tabulate
-
-graph = landmarks
+from routes import iligan_graph
+graph = iligan_graph
 
 class Route:
 
@@ -31,11 +31,23 @@ class Route:
     def initialize_paths(self):
         if not self.paths:
             self.paths = self.get_all_paths()
+            lens = [len(path) for path in self.paths]
+            max_len = max(lens)
+            temp = [path for path in self.paths if len(path) >= 20]
+            if len(temp) == 0:
+                print(self.name, "has no paths with more than 20 nodes maximum is", max(lens))
+
+            if max_len < 20:
+                temp = [path for path in self.paths if len(path) >= max_len]
+            
+            self.paths = [path for path in temp if len(path) <= 30]
 
     def choose_random_path(self):
         if not self.paths:
             self.initialize_paths()
         return random.randint(0, len(self.paths)-1)
+    
+    
 
 class Solution:
     # A route is a jeep    
@@ -60,14 +72,14 @@ class Solution:
         routes = self.get_path_choices()
         overall_weight = 0
         for route in routes:
-            overall_weight += route[1]['total_weight']
+            overall_weight += utils.get_path_distance(route[1])
         return overall_weight
 
     def get_overall_weight_ave(self):
         routes = self.get_path_choices()
         path_lengths = []
         for route in routes:
-            path_lengths.append(route[1]['total_weight'])
+            path_lengths.append(utils.get_path_distance(route[1]))
         
         return np.mean(path_lengths)
 
@@ -76,12 +88,26 @@ class Solution:
         routes = self.get_path_choices()
         counts = defaultdict(lambda: defaultdict(int))
 
-        for route in routes:
-            path = route[1]['path']
-            for i in range(len(path) - 1):
-                counts[path[i]][path[i+1]] += 1
+        for path in routes:
+            # path = route[1]['path']
+            for i in range(len(path[1]) - 1):
+                counts[path[1][i]][path[1][i+1]] += 1
         
         return counts
+    
+    def get_num_nodes_visited(self):
+        routes = self.get_path_choices()
+        nodes = 0
+        min = 10000
+        max = 0
+        for path in routes:
+            nodes += len(path[1])
+            if len(path[1]) < min:
+                min = len(path[1])
+            if len(path[1]) > max:
+                max = len(path[1])
+        
+        return (nodes, nodes/len(routes), min, max)
 
 
     def get_fitness(self):
@@ -94,18 +120,23 @@ class Solution:
         avg_congestion = utils.get_average_congestion_normalized(new_counts)
         acceptable_congestion_rate = utils.get_acceptable_congestion_rate(new_counts)
         all_acceptable_congestion = int(utils.check_all_acceptable_congestion(new_counts))
+        total_nodes, avg_nodes, min, max = self.get_num_nodes_visited()
+        num_nodes_range = max - min
         
 
-        normalized_scores = (1 - new_overall_weights/100000) \
-                            + 3 * (1 - new_overall_weights_avg/10000) \
-                            + 4 * (1- (avg_congestion_diff/30)) \
-                            + 4 * (1 - (max_congestion[0] / 10))  \
-                            + 4 * (1 - (avg_congestion / 10)) \
-                            + 20 * acceptable_congestion_rate[0] \
-                            + 36 * all_acceptable_congestion
+        normalized_scores = (25 - new_overall_weights/100000) \
+                            + 25 * (1 - new_overall_weights_avg/10000) \
+                            + 20 * (total_nodes/1000) \
+                            + 20 * (avg_nodes/1000) \
+                            + 20 * (1 - num_nodes_range/1000) \
+                            + 20 * (min/1000) \
+                            + 20 * (1- (avg_congestion_diff/30)) \
+                            + 20 * (1 - (max_congestion[0] / 10))  \
+                            + 20 * (1 - (avg_congestion / 10)) \
+                            + 250 * acceptable_congestion_rate[0] \
+                            + 250 * all_acceptable_congestion
 
-        
-        normalized_scores = normalized_scores / 72
+        normalized_scores = normalized_scores / 690
         return normalized_scores
 
 class Population:    
@@ -139,7 +170,7 @@ class Population:
 class GeneticAlgorithm:
     def __init__(self, routes, graph, current_counts, current_overall_weight_avg,
                 current_overall_weights, population_size=1200, crossover_rate=0.9, 
-                mutation_rate=0.1, elitism_param=10):
+                mutation_rate=0.1, elitism_param=10, generations=100):
         self.population_size = population_size
         self.crossover_rate = crossover_rate
         self.mutation_rate = mutation_rate
@@ -149,6 +180,7 @@ class GeneticAlgorithm:
         self.current_counts = current_counts
         self.current_overall_weight_avg = current_overall_weight_avg
         self.current_overall_weights = current_overall_weights
+        self.generations = generations
 
     def run(self):
         pop = Population(self.population_size,
@@ -159,7 +191,7 @@ class GeneticAlgorithm:
                         current_overall_weight_avg=self.current_overall_weight_avg)
         generation_counter = 0
 
-        while generation_counter < 10:
+        while generation_counter < self.generations: #Puwede Patas-an
             generation_counter += 1
             current_best = max(pop.sols, key=lambda p: p.get_fitness())
 
@@ -252,9 +284,10 @@ if __name__ == "__main__":
         current_overall_weight_avg=current_overall_weight_avg,
         current_overall_weights=current_overall_weights,
         population_size=100,
-        crossover_rate=0.4,
-        mutation_rate=1,
-        elitism_param=30
+        crossover_rate=0.8,
+        mutation_rate=0.4,
+        elitism_param=30,
+        generations=10
     )
 
     best = algorithm.run()
@@ -295,12 +328,15 @@ if __name__ == "__main__":
     with open("paths.txt", "w") as f:
         for path in best_path_choices:
             route = path[0]
-            path_taken = path[1]['path']
+            path_taken = path[1]
+            path_distance = utils.get_path_distance(path_taken)
+            num_nodes = utils.get_num_nodes(path_taken)
             f.write("-"*50)
-            f.write(f"\nRoute {route} | Nodes Visited {path[1]['num_visited']} | Distance {path[1]['total_weight']}\n")
+            f.write(f"\nRoute {route} | Nodes Visited {num_nodes} | Distance {path_distance}\n")
             f.write("->".join(path_taken))
             f.write("\n")
             f.write("-"*50)
+            
 
 
     print("results saved to results.txt")
